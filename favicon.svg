@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="VUELCOS">
+<metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>Juan Peco</dc:creator></rdf:Description></rdf:RDF></metadata>
+<rect width="64" height="64" rx="12" fill="#0F172A"/>
+<g transform="rotate(12 32 32) translate(16.5 7) scale(.5)"><path d="M52 26C52 16 43 10 31 10C19 10 10 16 10 27C10 38 21 42 31 50C41 58 52 62 52 73C52 84 43 90 31 90C19 90 10 84 10 74" fill="none" stroke="#EF4444" stroke-width="22"/></g>
+</svg>
