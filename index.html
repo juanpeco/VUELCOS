@@ -337,7 +337,7 @@
           <select id="plazo" name="plazo">
             <option>Lo antes posible</option><option>En uno o dos meses</option><option>Sin prisa</option>
           </select></div>
-        <div class="field"><p style="margin:0 0 8px;font-weight:600">Descuentos de lanzamiento (opcional)</p>
+        <div class="field" id="dto-bloque"><p style="margin:0 0 8px;font-weight:600">Descuentos de lanzamiento (opcional)</p>
           <p style="margin:0 0 10px;font-size:14px">Válidos para proyectos aceptados hasta el 31 de marzo de 2027. Se aplican sobre el precio del proyecto, sin IVA, y se confirman por escrito en la propuesta.</p>
           <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:8px"><input type="checkbox" id="dto-pago" style="margin-top:5px;width:auto"><label for="dto-pago" style="font-size:14px"><strong>10 %</strong> si pagas el 100 % al aceptar la propuesta.</label></div>
           <div style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="dto-caso" style="margin-top:5px;width:auto"><label for="dto-caso" style="font-size:14px"><strong>15 %</strong> si nos permites enseñar tu web como caso real, con tu autorización por escrito. Con las dos condiciones, <strong>20 %</strong>.</label></div></div>
@@ -425,7 +425,11 @@
     return setErr(3, val("dato") ? "" : "Indica un correo o un teléfono para responderte.");
   }
 
+  var DTO_FIN = new Date("2027-04-01T00:00:00+02:00");
+  var dtoCaducado = new Date() >= DTO_FIN;
+  if (dtoCaducado) { document.getElementById("dto-bloque").style.display = "none"; }
   function dtoTxt(){
+    if (dtoCaducado) return "ninguno";
     var p = document.getElementById("dto-pago").checked, c = document.getElementById("dto-caso").checked;
     if (p && c) return "20 % (pago del 100 % al aceptar y autorización como caso real)";
     if (c) return "15 % (autorizo enseñar mi web como caso real)";

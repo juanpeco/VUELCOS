@@ -335,13 +335,14 @@ for k,v in SECTORS.items():
     write(path,themed(h,k))
 
 # ---------- hubs ----------
-DTO_HTML='''<div class="card" style="margin-top:32px"><h2 style="font-size:clamp(24px,3.2vw,34px);margin:0 0 12px">Descuentos de lanzamiento</h2>
+DTO_HTML='''<div class="card" id="descuentos" style="margin-top:32px"><h2 style="font-size:clamp(24px,3.2vw,34px);margin:0 0 12px">Descuentos de lanzamiento</h2>
 <p>Válidos para proyectos aceptados hasta el 31 de marzo de 2027, incluido. Se aplican sobre el precio acordado del proyecto, sin IVA, y se confirman por escrito en la propuesta. Puedes marcarlos en el formulario.</p>
 <ul><li><strong>10 %</strong> si pagas el 100 % al aceptar la propuesta.</li>
 <li><strong>15 %</strong> si nos permites enseñar tu web como caso real. Lo pedimos por escrito y puedes decir que no.</li>
 <li><strong>20 %</strong> si se cumplen las dos condiciones.</li></ul>
 <p>Ejemplo sobre una landing de 300 €: 270 € con el 10 %, 255 € con el 15 % y 240 € con el 20 %, más IVA.</p>
-<p>Si prefieres pagar en dos plazos, 50 % al empezar y 50 % al entregar la web completa, también se puede. Ese pago fraccionado no lleva el descuento del 10 %.</p></div>'''
+<p>Si prefieres pagar en dos plazos, 50 % al empezar y 50 % al entregar la web completa, también se puede. Ese pago fraccionado no lleva el descuento del 10 %.</p></div>
+<script>if(new Date()>=new Date("2027-04-01T00:00:00+02:00")){var d=document.getElementById("descuentos");if(d){d.style.display="none";}}</script>'''
 def hub(path,name,title,desc,h1,lead,cardsx):
     items=[("Inicio","/"),(name,None)]; urls.append(path)
     ld={"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","url":D+path,"name":title,"description":desc,"inLanguage":"es"},bc_ld(items,path)]}
@@ -364,7 +365,7 @@ def honest():
     si=["Webs en HTML estático: las escribimos, las probamos en local y te las entregamos listas para publicar.","Maquetamos los textos que tú nos pasas. Son tu responsabilidad; si prefieres que los redactemos nosotros, se presupuesta aparte.","Logos sencillos en vectorial (SVG y PNG), con favicon e imagen para redes, si los necesitas. Se cobran aparte si se piden por separado o no figuran en el precio de tu propuesta. No es identidad corporativa completa.","SEO técnico: títulos, descripciones, datos estructurados, mapa del sitio y velocidad.","Guía para publicar la web de forma gratuita o barata y para registrar tu dominio.","Alcance, plazo y precio por escrito antes de empezar."]
     no=["No hacemos WordPress ni otros gestores de contenido. Si lo necesitas, no es esto.","No programamos aplicaciones, ni backends a medida, ni integraciones con tu software de gestión sin valorarlas antes y decírtelo.","No garantizamos posiciones ni plazos en Google. Nadie puede hacerlo con honestidad.","No hacemos fotografía ni vídeo. Usamos tus fotos; si no tienes, te lo decimos antes de poner imágenes genéricas.","No gestionamos redes sociales ni campañas de anuncios.","No damos asesoramiento jurídico, fiscal ni sanitario: los textos legales y la publicidad regulada los revisas tú con tu gestor o tu colegio profesional.","No compramos enlaces ni inventamos reseñas."]
     ia=["La IA es la herramienta con la que trabajamos: nos ahorra tiempo en la producción.","No inventamos datos, cifras ni casos: si algo no se puede comprobar, no se escribe.","Los logos e imágenes se hacen con formas vectoriales propias; no copiamos marcas ni personajes de otros."]
-    terc=["Dominio y alojamiento: los contratas tú, a tu nombre. Su coste es aparte.","Reservas, pagos y cuotas de las herramientas que se integren: los cobra cada proveedor.","Tipografías: se cargan desde Google Fonts."]
+    terc=["Dominio y alojamiento: los contratas tú, a tu nombre. Su coste es aparte.","Reservas, pagos y cuotas de las herramientas que se integren: los cobra cada proveedor.","Tipografías: se sirven desde la propia web, sin cargarlas de servidores externos."]
     h=head(t,d,path,ld)+crumbs(items)+f'''
 <section class="phero"><div class="wrap"><span class="eyebrow">Sin letra pequeña</span><h1>Qué hacemos y qué no</h1><p class="lead">Si algo no lo podemos entregar, no lo ofrecemos. Esta página es el compromiso de que lo que ves en la web es lo que recibes.</p>{cta()}</div></section>
 <section class="tight"><div class="wrap"><div class="lists"><div class="box"><h3>Lo que sí hacemos</h3>{ul(si)}</div><div class="box"><h3>Lo que no hacemos</h3>{ul(no)}</div></div></div></section>
