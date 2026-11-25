@@ -335,6 +335,12 @@ for k,v in SECTORS.items():
     write(path,themed(h,k))
 
 # ---------- hubs ----------
+DTO_HTML='''<div class="card" style="margin-top:32px"><h2 style="font-size:clamp(24px,3.2vw,34px);margin:0 0 12px">Descuentos</h2>
+<p>Se aplican sobre el precio acordado del proyecto, sin IVA, y se confirman por escrito en la propuesta. Puedes marcarlos en el formulario.</p>
+<ul><li><strong>10 %</strong> si pagas por adelantado. Las condiciones del pago se acuerdan en la propuesta.</li>
+<li><strong>15 %</strong> si nos permites enseñar tu web como caso real. Lo pedimos por escrito y puedes decir que no.</li>
+<li><strong>20 %</strong> si se cumplen las dos condiciones.</li></ul>
+<p>Ejemplo sobre una landing de 300 €: 270 € con el 10 %, 255 € con el 15 % y 240 € con el 20 %, más IVA.</p></div>'''
 def hub(path,name,title,desc,h1,lead,cardsx):
     items=[("Inicio","/"),(name,None)]; urls.append(path)
     ld={"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","url":D+path,"name":title,"description":desc,"inLanguage":"es"},bc_ld(items,path)]}
@@ -344,7 +350,7 @@ def hub(path,name,title,desc,h1,lead,cardsx):
 <section class="tight band"><div class="wrap"><div class="sec-head"><h2>¿No ves tu caso?</h2><p>Cuéntalo en el formulario. Si no encaja, te lo digo antes de que gastes nada.</p></div>{cta()}</div></section>
 '''+foot()
     write(path,h)
-hub('/servicios/','Servicios',"Servicios y precios de diseño web con IA | VUELCOS","Landing desde 300 €, web de negocio desde 800 €, tienda online desde 1.200 €, reservas, textos y SEO, y mantenimiento. Precios sin IVA.","Qué hacemos y cuánto cuesta","Seis servicios con alcance y precio por escrito antes de empezar. Los «desde» no incluyen IVA.",'<div class="grid g3">'+''.join(svc_card(k) for k in SERVICES)+'</div>')
+hub('/servicios/','Servicios',"Servicios y precios de diseño web con IA | VUELCOS","Landing desde 300 €, web de negocio desde 800 €, tienda online desde 1.200 €, reservas, textos y SEO, y mantenimiento. Precios sin IVA.","Qué hacemos y cuánto cuesta","Seis servicios con alcance y precio por escrito antes de empezar. Los «desde» no incluyen IVA.",'<div class="grid g3">'+''.join(svc_card(k) for k in SERVICES)+'</div>'+DTO_HTML)
 hub('/sectores/','Sectores',"Webs para abogados, clínicas, hostelería y más | VUELCOS","Webs pensadas para abogados, clínicas, restaurantes y hoteles, inmobiliarias, reformas y oficios, y centros de estética. Desde 800 € sin IVA.","Webs pensadas para tu sector","Cada sector tiene dudas, normas y búsquedas distintas. Estas son las páginas que hemos trabajado primero.",'<div class="sectors">'+''.join(f'<a class="sector" href="/sectores/{k}/"><h3>{E(v["name"])}</h3><p>{E(v["lead"].split(".")[0])}.</p><span class="more">Ver cómo lo hacemos →</span></a>' for k,v in SECTORS.items())+'</div><h2 style="margin:56px 0 24px;font-size:clamp(30px,4.4vw,48px)">Nichos con página propia</h2><div class="sectors">'+''.join(f'<a class="sector" href="/nichos/{k}/"><h3>{E(v["name"])}</h3><p>{E(v["lead"].split(".")[0])}.</p><span class="more">Ver cómo lo hacemos →</span></a>' for k,v in NICHES.items())+'</div>')
 
 

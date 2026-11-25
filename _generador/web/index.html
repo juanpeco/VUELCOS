@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VUELCOS Webs con IA</title>
+<meta name="author" content="Juan Peco">
+<meta name="description" content="Webs hechas con inteligencia artificial para negocios: alcance, plazo y precio por escrito antes de empezar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Plan: identidad VUELCOS (navy, rojo, papel frío). Display condensado en mayúsculas; cuerpo grotesco.
+   Idea de layout: una página larga que cuelga de un hilo; la S roja oscila en el hero. */
+:root{
+  --ink:#0F172A;
+  --ink-2:#1E293B;
+  --paper:#F8FAFC;
+  --panel:#FFFFFF;
+  --red:#DC2626;
+  --red-soft:#EF4444;
+  --slate:#475569;
+  --thread:#64748B;
+  --line:#E2E8F0;
+  --display:"Big Shoulders Display","Arial Narrow","Oswald",Impact,sans-serif;
+  --body:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --gutter:20px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:50}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* Tipografía */
+h1,h2,h3{margin:0;text-wrap:balance}
+h1,h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.005em;line-height:.95}
+h1{font-size:clamp(46px,8.4vw,104px)}
+h2{font-size:clamp(34px,5.4vw,60px)}
+h3{font-family:var(--body);font-weight:700;font-size:20px;line-height:1.25}
+p{margin:0}
+.eyebrow{display:inline-block;font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.lead{font-size:clamp(18px,2.1vw,21px);color:var(--slate);max-width:56ch}
+.muted{color:var(--slate)}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:3px;border:2px solid var(--ink);font:700 16px/1 var(--body);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn-primary:hover{background:#B91C1C;border-color:#B91C1C}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px)}
+
+/* Cabecera */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;text-decoration:none;color:var(--ink);--s:var(--red);--thr:var(--thread);--hole:var(--paper)}
+.brand svg{height:58px;width:auto;display:block}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a:not(.btn){text-decoration:none;font-weight:500;font-size:15px;color:var(--slate)}
+.nav a:not(.btn):hover{color:var(--ink)}
+.nav .btn{min-height:42px;padding:0 18px;font-size:15px}
+
+/* Hero */
+.hero{position:relative;padding:68px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);gap:32px;align-items:start}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lead{margin:26px 0 32px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.fine{margin-top:18px;font-size:14px;color:var(--slate)}
+.hang{margin-top:-68px;display:flex;justify-content:center}
+.hang svg{height:430px;width:auto;transform-origin:50% 0;animation:swing 6.5s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(3.2deg)}50%{transform:rotate(-3.2deg)}}
+
+/* Secciones */
+section{padding:88px 0}
+.sec-head{max-width:760px;margin-bottom:44px}
+.sec-head p{margin-top:16px;color:var(--slate)}
+.band{background:var(--ink);color:var(--paper)}
+.band .eyebrow{color:var(--red-soft)}
+.band .sec-head p,.band .muted{color:#CBD5E1}
+
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.card p{color:var(--slate);font-size:16px}
+.card.plain{background:transparent;border-color:#CBD5E1}
+.band .card{background:var(--ink-2);border-color:#334155}
+.band .card p{color:#CBD5E1}
+.tick{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.tick li{position:relative;padding-left:22px}
+.tick li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--red)}
+.price{margin-top:auto;padding-top:12px;border-top:1px solid #334155;font-size:15px;color:#CBD5E1}
+.price b{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.01em;color:var(--paper);margin:0 4px}
+.price.ask b{font-size:18px;font-family:var(--body);font-weight:700;margin:0}
+.pricenote{margin-top:22px;font-size:14px;color:#94A3B8;max-width:70ch}
+.example{margin-top:0;min-height:98px;padding:12px 14px;background:var(--paper);border-left:3px solid var(--red);font-size:14px;color:var(--ink)}
+.example b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:3px}
+
+/* Problemas / solución */
+.split-title{display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.pain h3::before{content:"×";display:inline-block;margin-right:10px;color:var(--red);font-weight:800}
+.fix h3::before{content:"✓";display:inline-block;margin-right:10px;color:var(--red-soft);font-weight:800}
+
+/* Sectores */
+.sectors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #CBD5E1;border-left:1px solid #CBD5E1}
+.sector{padding:26px;border-right:1px solid #CBD5E1;border-bottom:1px solid #CBD5E1}
+.sector h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:28px;letter-spacing:.01em;margin-bottom:8px}
+.sector p{color:var(--slate);font-size:16px}
+
+/* Proceso */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:s}
+.step{border-top:3px solid var(--red-soft);padding-top:18px}
+.step .n{font-family:var(--display);font-weight:900;font-size:64px;line-height:1;color:var(--red-soft);display:block;margin-bottom:10px}
+.step p{margin-top:8px;font-size:16px}
+
+/* FAQ */
+.faq{max-width:860px;display:grid;gap:10px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:4px}
+summary{list-style:none;cursor:pointer;padding:20px 56px 20px 22px;font-weight:700;font-size:18px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font:500 28px/1 var(--body);color:var(--red)}
+details[open] summary::after{content:"–"}
+details p{padding:0 22px 22px;color:var(--slate)}
+
+/* Contacto */
+.contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:44px;align-items:start}
+.recibes{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.recibes li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.recibes b{font-family:var(--display);font-weight:900;font-size:28px;line-height:1;color:var(--red-soft)}
+.form{background:var(--panel);color:var(--ink);border-radius:4px;padding:28px}
+.progress{display:flex;gap:6px;margin-bottom:6px}
+.progress i{flex:1;height:4px;background:var(--line);border-radius:2px}
+.progress i.on{background:var(--red)}
+.stepno{font-size:13px;color:var(--slate);margin-bottom:18px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:20px;margin-bottom:14px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{display:inline-block;padding:11px 16px;border:2px solid var(--line);border-radius:3px;font-weight:600;font-size:15px;cursor:pointer;background:var(--paper)}
+.chips input:checked+label{border-color:var(--red);background:#FEF2F2;color:#991B1B}
+.chips input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:600;font-size:15px}
+.field input,.field select,.field textarea{width:100%;font:400 16px/1.4 var(--body);padding:12px 14px;border:2px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink)}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink)}
+.err{color:#B91C1C;font-size:14px;min-height:20px;margin:4px 0 0}
+.form-nav{display:flex;justify-content:space-between;gap:10px;margin-top:10px}
+.result{display:grid;gap:14px}
+.result pre{margin:0;white-space:pre-wrap;word-break:break-word;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:14px;font:400 14px/1.5 var(--body)}
+[hidden]{display:none!important}
+
+/* Pie */
+footer{background:var(--ink);color:#CBD5E1;padding:56px 0 34px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.foot .brand{--s:var(--red-soft);--thr:#CBD5E1;--hole:var(--ink);color:var(--paper)}
+.foot h4{margin:0 0 12px;font:700 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--paper)}
+.foot ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+.foot a{text-decoration:none}.foot a:hover{color:#fff;text-decoration:underline}
+.legal{margin-top:36px;padding-top:20px;border-top:1px solid #334155;font-size:13px;color:#94A3B8}
+
+@media (max-width:900px){
+  section{padding:64px 0}
+  .g3,.sectors,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-grid,.foot{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr}
+  .hang{order:-1;margin-top:-68px;justify-content:flex-end;padding-right:6%}
+  .hang svg{height:220px}
+  .nav a:not(.btn){display:none}
+}
+@media (max-width:600px){
+  .g3,.g2,.sectors,.steps{grid-template-columns:1fr}
+  .hero{padding:56px 0 64px}
+  .brand svg{height:50px}
+  .form{padding:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hang svg{animation:none;transform:rotate(2deg)}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Logo reutilizable: VUELCO + S colgando de un hilo -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="logo" viewBox="0 0 400 252">
+      <g fill="currentColor">
+        <path transform="translate(0 0)" d="M0 0H23L35 68L47 0H70L46 100H24Z"/>
+        <path transform="translate(78 0)" d="M0 0H22V68Q22 80 31 80Q40 80 40 68V0H62V70Q62 100 31 100Q0 100 0 70Z"/>
+        <path transform="translate(148 0)" d="M0 0H50V20H22V39H46V59H22V80H50V100H0Z"/>
+        <path transform="translate(206 0)" d="M0 0H22V80H48V100H0Z"/>
+        <path transform="translate(262 0)" d="M62 36H40V30Q40 20 31 20Q22 20 22 30V70Q22 80 31 80Q40 80 40 70V64H62V70Q62 100 31 100Q0 100 0 70V30Q0 0 31 0Q62 0 62 30Z"/>
+        <path transform="translate(332 0)" fill-rule="evenodd" d="M31 0Q62 0 62 30V70Q62 100 31 100Q0 100 0 70V30Q0 0 31 0ZM31 20Q40 20 40 30V70Q40 80 31 80Q22 80 22 70V30Q22 20 31 20Z"/>
+      </g>
+      <path d="M363 80V150" fill="none" stroke="var(--thr)" stroke-width="3"/>
+      <g transform="translate(354.268 191.082) rotate(12) translate(-31 -50)">
+        <path d="M52 26C52 16 43 10 31 10C19 10 10 16 10 27C10 38 21 42 31 50C41 58 52 62 52 73C52 84 43 90 31 90C19 90 10 84 10 74" fill="none" stroke="var(--s)" stroke-width="20"/>
+      </g>
+      <circle cx="363" cy="150" r="3.8" fill="var(--hole)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="VUELCOS, inicio"><svg viewBox="0 0 400 252" role="img" aria-hidden="true"><use href="#logo"/></svg></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn btn-primary" href="#contacto">Pide tu web</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="hero" id="inicio" style="padding-top:68px">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Webs con IA · Alcance cerrado por escrito</span>
+      <h1>Tu web, hecha con IA y <em>sin vueltas</em></h1>
+      <p class="lead">Diseñamos y ponemos en marcha la web de tu negocio con inteligencia artificial. Antes de empezar tienes por escrito qué incluye, cuánto tarda y cuánto cuesta.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contacto">Pide tu web</a>
+        <a class="btn btn-ghost" href="#proceso">Ver cómo trabajamos</a>
+      </div>
+      <p class="fine">Webs desde 300 €, IVA no incluido. Pedir presupuesto no te compromete a nada y te respondemos por escrito.</p>
+    </div>
+    <div class="hang" aria-hidden="true">
+      <svg viewBox="0 0 220 440" role="img" aria-label="">
+        <path d="M110 0V190" stroke="#64748B" stroke-width="2.4" fill="none"/>
+        <g transform="translate(95.16 259.84) scale(1.7) rotate(12) translate(-31 -50)">
+          <path d="M52 26C52 16 43 10 31 10C19 10 10 16 10 27C10 38 21 42 31 50C41 58 52 62 52 73C52 84 43 90 31 90C19 90 10 84 10 74" fill="none" stroke="#DC2626" stroke-width="20"/>
+        </g>
+        <circle cx="110" cy="190" r="6.5" fill="#F8FAFC"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="principios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cómo nos comprometemos</span>
+      <h2>Tres cosas que quedan claras desde el primer día</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card"><h3>Alcance por escrito</h3><p>Qué páginas, qué funciones y qué queda fuera. Lo firmas antes de que empecemos a construir.</p></article>
+      <article class="card"><h3>Plazo y precio definidos</h3><p>La propuesta incluye fecha de entrega y precio. Si algo cambia, se acuerda antes de hacerlo.</p></article>
+      <article class="card"><h3>Una web que puedes usar</h3><p>Te entregamos la web funcionando y te explicamos cómo pedir cambios o cómo gestionarla tú.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="problemas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Punto de partida</span>
+      <h2>Lo que suele frenar a un negocio con su web</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card pain"><h3>No tienes web, o no te representa</h3><p>Los clientes te buscan, encuentran una ficha incompleta o una página antigua y se van a otro sitio.</p></article>
+      <article class="card pain"><h3>Los proyectos se alargan</h3><p>Semanas de correos, versiones que no encajan y un precio que crece sin que sepas por qué.</p></article>
+      <article class="card pain"><h3>Después no sabes tocar nada</h3><p>Cambiar un precio o un horario depende de que alguien tenga tiempo para hacerlo.</p></article>
+    </div>
+    <div class="split-title" style="margin:64px 0 28px"><h2 style="max-width:14ch">Cómo lo resolvemos</h2></div>
+    <div class="grid g3">
+      <article class="card plain fix"><h3>La IA es nuestra herramienta</h3><p>Trabajamos con IA para ahorrar tiempo en la producción. Tú aportas los textos; una persona monta y revisa la web.</p></article>
+      <article class="card plain fix"><h3>Ves el avance pronto</h3><p>Trabajas sobre una primera versión real y señalas lo que cambiarías, en lugar de imaginarla.</p></article>
+      <article class="card plain fix"><h3>Un solo interlocutor</h3><p>Hablas siempre con la misma persona, que responde de plazo y precio.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Servicios</span>
+      <h2>Qué podemos hacer por tu negocio</h2>
+      <p>Seis formas de empezar. Los ejemplos son orientativos y sirven para ver qué tipo de proyecto encaja en cada una.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card"><h3>Landing de una oferta</h3><p>Una sola página con un único objetivo: que te escriban, reserven o compren.</p>
+        <ul class="tick"><li>Diseño adaptado al móvil</li><li>Tus textos, bien colocados</li><li>Formulario o botón de contacto</li></ul>
+        <div class="price">Desde<b>300 €</b>IVA no incluido</div>
+        <div class="example"><b>Ejemplo orientativo</b>Una academia que lanza un curso nuevo y necesita temario, precio y matrícula en una página.</div></article>
+      <article class="card"><h3>Web de negocio</h3><p>Quién eres, qué haces y cómo contactarte, en tres a seis páginas.</p>
+        <ul class="tick"><li>Inicio, servicios, sobre nosotros y contacto</li><li>Tus textos e imágenes, colocados y revisados</li><li>Preparada para aparecer en buscadores</li></ul>
+        <div class="price">Desde<b>800 €</b>IVA no incluido</div>
+        <div class="example"><b>Ejemplo orientativo</b>Una gestoría que hoy solo tiene una ficha en Google.</div></article>
+      <article class="card"><h3>Tienda online sencilla</h3><p>Para vender pocos productos con una experiencia de compra clara.</p>
+        <ul class="tick"><li>Catálogo y pago con una herramienta externa</li><li>Fichas con tus textos y fotos</li><li>Aviso de pedidos, según la herramienta elegida</li></ul>
+        <div class="price">Desde<b>1.200 €</b>IVA no incluido</div>
+        <div class="example"><b>Ejemplo orientativo</b>Un taller de cerámica que vende unas veinte piezas por temporada.</div></article>
+      <article class="card"><h3>Reservas y citas</h3><p>Que tus clientes elijan hora sin tener que escribirte antes.</p>
+        <ul class="tick"><li>Calendario de una herramienta de reservas integrada</li><li>Confirmación por correo</li><li>Formulario con las preguntas que necesitas</li></ul>
+        <div class="price ask"><b>Presupuesto según alcance</b></div>
+        <div class="example"><b>Ejemplo orientativo</b>Una clínica de fisioterapia que gestiona las citas por mensajes sueltos.</div></article>
+      <article class="card"><h3>Textos, imágenes y SEO</h3><p>Contenido propio para una web que ya tienes o que vamos a crear.</p>
+        <ul class="tick"><li>Textos en el tono de tu marca</li><li>Imágenes y gráficos generados con IA</li><li>Títulos y descripciones para buscadores</li></ul>
+        <div class="price ask"><b>Presupuesto según alcance</b></div>
+        <div class="example"><b>Ejemplo orientativo</b>Un restaurante que quiere carta y página de eventos al día cada temporada.</div></article>
+      <article class="card"><h3>Cambios y mantenimiento</h3><p>Para que la web siga al día sin depender de nadie más.</p>
+        <ul class="tick"><li>Cambios de texto, precios e imágenes</li><li>Revisión de que todo funciona</li><li>Ayuda cuando algo falla</li></ul>
+        <div class="price">Desde<b>25 €</b>al mes, IVA no incluido</div>
+        <div class="example"><b>Ejemplo orientativo</b>Una peluquería que cambia horarios y tarifas cada pocos meses.</div></article>
+    </div>
+    <p class="pricenote">Los precios "desde" no incluyen IVA y son el punto de partida. El IVA se añade o no según tu país y si contratas como empresa o como particular, y se indica en la propuesta. El precio final queda por escrito en la propuesta. Dominio y alojamiento se indican aparte. Redactar los textos o hacer un logo también se presupuesta aparte.</p>
+  </div>
+</section>
+
+<section id="sectores">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sectores</span>
+      <h2>Negocios para los que funciona bien</h2>
+    </div>
+    <div class="sectors">
+      <div class="sector"><h3>Restauración</h3><p>Carta, reservas y eventos en una web que carga rápido en el móvil.</p></div>
+      <div class="sector"><h3>Clínicas y salud</h3><p>Equipo, tratamientos y citas explicados con claridad.</p></div>
+      <div class="sector"><h3>Belleza y bienestar</h3><p>Servicios, tarifas y reservas con buena imagen.</p></div>
+      <div class="sector"><h3>Servicios profesionales</h3><p>Presenta tu experiencia y facilita que te contacten.</p></div>
+      <div class="sector"><h3>Comercio local</h3><p>Un escaparate online para tus productos y tus horarios.</p></div>
+      <div class="sector"><h3>Formación</h3><p>Cursos, programas y matrícula en un solo sitio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="proceso">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Cuatro pasos, de la idea a la web publicada</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Conversación y diagnóstico</h3><p>Nos cuentas qué haces, a quién vendes y qué quieres que consiga la web.</p></div>
+      <div class="step"><span class="n">02</span><h3>Propuesta cerrada</h3><p>Alcance, plazo y precio por escrito. Si te encaja, empezamos.</p></div>
+      <div class="step"><span class="n">03</span><h3>Primera versión y ajustes</h3><p>Ves una web real, nos dices qué cambiar y lo ajustamos.</p></div>
+      <div class="step"><span class="n">04</span><h3>Publicación y soporte</h3><p>La ponemos en línea, te explicamos cómo usarla y seguimos disponibles.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Antes de escribirnos</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Qué significa que la web está hecha con IA?</summary><p>La inteligencia artificial es la herramienta con la que trabajamos: nos ahorra tiempo al montar la web. Los textos los aportas tú; después se revisa el resultado antes de enseñártelo.</p></details>
+      <details><summary>¿Cuánto tarda?</summary><p>Depende del alcance. El plazo se fija por escrito en la propuesta, antes de empezar.</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>Una landing parte de 300 €, una web de negocio de 800 € y una tienda online sencilla de 1.200 €, todo sin IVA. El IVA se añade o no según tu país y si contratas como empresa o como particular. El precio final depende de lo que necesites y queda por escrito en la propuesta. Dominio y alojamiento se indican aparte. Pedir presupuesto no te compromete a nada.</p></details>
+      <details><summary>¿Puedo pedir cambios después?</summary><p>Los ajustes de la primera versión se acuerdan en la propuesta. Después puedes pedir cambios sueltos con presupuesto previo o contratar el mantenimiento, desde 25 € al mes, sin IVA.</p></details>
+      <details><summary>¿De quién es la web y dónde se aloja?</summary><p>Dominio, alojamiento y propiedad de los contenidos se definen en la propuesta y quedan por escrito. El coste de dominio y alojamiento va aparte del precio de la web.</p></details>
+      <details><summary>¿Qué necesito para empezar?</summary><p>Basta con que cuentes qué ofreces, a quién y qué quieres que haga la web. Los textos los aportas tú y nosotros los colocamos. Si prefieres que los redactemos, o necesitas un logo, se presupuesta aparte.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Contacto</span>
+      <h2>Cuéntanos qué necesitas</h2>
+      <p class="lead" style="margin-top:18px;color:#CBD5E1">Tres pasos cortos. No hace falta que lo tengas todo claro.</p>
+      <ol class="recibes">
+        <li><b>1</b><span>Confirmamos por escrito qué nos has pedido.</span></li>
+        <li><b>2</b><span>Te decimos qué nos falta saber para presupuestar.</span></li>
+        <li><b>3</b><span>Te proponemos el siguiente paso y un plazo orientativo.</span></li>
+      </ol>
+      <p class="muted" id="mail-line" style="margin-top:26px" hidden></p>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="progress" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+      <p class="stepno" id="stepno" aria-live="polite">Paso 1 de 3</p>
+
+      <fieldset data-step="1">
+        <legend>¿Qué tipo de proyecto es?</legend>
+        <div class="chips">
+          <input type="radio" name="tipo" id="t1" value="Landing de una oferta"><label for="t1">Landing de una oferta</label>
+          <input type="radio" name="tipo" id="t2" value="Web de negocio"><label for="t2">Web de negocio</label>
+          <input type="radio" name="tipo" id="t3" value="Tienda online sencilla"><label for="t3">Tienda online</label>
+          <input type="radio" name="tipo" id="t4" value="Reservas y citas"><label for="t4">Reservas y citas</label>
+          <input type="radio" name="tipo" id="t5" value="Textos, imágenes y SEO"><label for="t5">Textos y SEO</label>
+          <input type="radio" name="tipo" id="t6" value="Todavía no lo sé"><label for="t6">Aún no lo sé</label>
+        </div>
+        <p class="err" id="err1" role="alert"></p>
+      </fieldset>
+
+      <fieldset data-step="2" hidden>
+        <legend>Cuéntanos lo esencial</legend>
+        <div class="field"><label for="detalle">¿Qué hace tu negocio y qué quieres que consiga la web?</label>
+          <textarea id="detalle" name="detalle"></textarea></div>
+        <div class="field"><label for="plazo">¿Para cuándo la quieres?</label>
+          <select id="plazo" name="plazo">
+            <option>Lo antes posible</option><option>En uno o dos meses</option><option>Sin prisa</option>
+          </select></div>
+        <div class="field"><p style="margin:0 0 8px;font-weight:600">Descuentos de lanzamiento (opcional)</p>
+          <p style="margin:0 0 10px;font-size:14px">Se aplican sobre el precio del proyecto, sin IVA, y se confirman por escrito en la propuesta.</p>
+          <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:8px"><input type="checkbox" id="dto-pago" style="margin-top:5px;width:auto"><label for="dto-pago" style="font-size:14px"><strong>10 %</strong> si pagas por adelantado, según se acuerde en la propuesta.</label></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="dto-caso" style="margin-top:5px;width:auto"><label for="dto-caso" style="font-size:14px"><strong>15 %</strong> si nos permites enseñar tu web como caso real, con tu autorización por escrito. Con las dos condiciones, <strong>20 %</strong>.</label></div></div>
+        <p class="err" id="err2" role="alert"></p>
+      </fieldset>
+
+      <fieldset data-step="3" hidden>
+        <legend>¿Cómo te respondemos?</legend>
+        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name"></div>
+        <div class="field"><label for="dato">Correo o teléfono</label><input id="dato" name="contacto" autocomplete="email"></div>
+        <p class="err" id="err3" role="alert"></p>
+      </fieldset>
+
+      <div class="form-nav">
+        <button class="btn btn-ghost" type="button" id="back" hidden>Atrás</button>
+        <button class="btn btn-primary" type="button" id="next" style="margin-left:auto">Siguiente</button>
+      </div>
+
+      <div class="result" id="result" hidden>
+        <h3 style="font-size:20px">Tu mensaje está listo</h3>
+        <p class="muted" id="result-note"></p>
+        <pre id="summary"></pre>
+        <div class="cta-row">
+          <button class="btn btn-primary" type="button" id="copy">Copiar mensaje</button>
+          <button class="btn btn-ghost" type="button" id="restart">Empezar de nuevo</button>
+        </div>
+        <p class="muted" id="copied" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#inicio" aria-label="VUELCOS, inicio"><svg viewBox="0 0 400 252" role="img" aria-hidden="true" style="height:64px"><use href="#logo"/></svg></a>
+        <p style="margin-top:14px;max-width:34ch;font-size:15px">Webs hechas con inteligencia artificial para negocios que quieren estar en línea sin complicarse.</p>
+      </div>
+      <div><h4>Servicios</h4><ul><li><a href="#servicios">Landing y web de negocio</a></li><li><a href="#servicios">Tienda y reservas</a></li><li><a href="#servicios">Mantenimiento</a></li></ul></div>
+      <div><h4>Compañía</h4><ul><li><a href="#proceso">Cómo trabajamos</a></li><li><a href="#sectores">Sectores</a></li><li><a href="#preguntas">Preguntas</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="#contacto">Pide tu web</a></li></ul></div>
+    </div>
+    <p class="legal">© 2026 VUELCOS. Aviso legal, política de privacidad y cookies: pendientes de publicar antes de salir en línea.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Pon aquí el correo que recibirá los mensajes. Mientras esté vacío, el formulario solo prepara el texto para copiar.
+  var CONTACT_EMAIL = "";
+
+  var steps = Array.prototype.slice.call(document.querySelectorAll("fieldset[data-step]"));
+  var bars = document.querySelectorAll(".progress i");
+  var stepno = document.getElementById("stepno");
+  var next = document.getElementById("next"), back = document.getElementById("back");
+  var result = document.getElementById("result"), summary = document.getElementById("summary");
+  var note = document.getElementById("result-note"), copied = document.getElementById("copied");
+  var cur = 0;
+
+  var mailLine = document.getElementById("mail-line");
+  if (CONTACT_EMAIL) { mailLine.hidden = false; mailLine.textContent = "También puedes escribir a " + CONTACT_EMAIL; }
+
+  function show(i){
+    cur = i;
+    steps.forEach(function(s, k){ s.hidden = k !== i; });
+    bars.forEach(function(b, k){ b.className = k <= i ? "on" : ""; });
+    stepno.textContent = "Paso " + (i + 1) + " de 3";
+    back.hidden = i === 0;
+    next.textContent = i === 2 ? "Preparar mensaje" : "Siguiente";
+  }
+  function val(id){ return (document.getElementById(id).value || "").trim(); }
+  function setErr(n, t){ document.getElementById("err" + n).textContent = t; return !t; }
+
+  function validate(i){
+    if (i === 0) return setErr(1, document.querySelector('input[name="tipo"]:checked') ? "" : "Elige el tipo de proyecto que más se parezca.");
+    if (i === 1) return setErr(2, val("detalle").length >= 10 ? "" : "Escribe al menos una frase sobre tu negocio y lo que necesitas.");
+    var ok = val("nombre") ? true : false;
+    if (!ok) return setErr(3, "Escribe tu nombre.");
+    return setErr(3, val("dato") ? "" : "Indica un correo o un teléfono para responderte.");
+  }
+
+  function dtoTxt(){
+    var p = document.getElementById("dto-pago").checked, c = document.getElementById("dto-caso").checked;
+    if (p && c) return "20 % (pago por adelantado y autorización como caso real)";
+    if (c) return "15 % (autorizo enseñar mi web como caso real)";
+    if (p) return "10 % (pago por adelantado)";
+    return "ninguno";
+  }
+  next.addEventListener("click", function(){
+    if (!validate(cur)) return;
+    if (cur < 2) { show(cur + 1); return; }
+    var tipo = document.querySelector('input[name="tipo"]:checked').value;
+    var txt = "Hola, quiero pedir presupuesto para una web.\n\n" +
+      "Tipo de proyecto: " + tipo + "\n" +
+      "Para cuándo: " + val("plazo") + "\n" +
+      "Mi negocio y lo que necesito: " + val("detalle") + "\n" +
+      "Descuento que solicito: " + dtoTxt() + "\n\n" +
+      "Nombre: " + val("nombre") + "\n" +
+      "Contacto: " + val("dato");
+    summary.textContent = txt;
+    note.textContent = CONTACT_EMAIL
+      ? "Copia el mensaje y envíalo a " + CONTACT_EMAIL + ". Esta página no envía nada por sí sola."
+      : "Esta página todavía no tiene un correo de destino y no envía nada por sí sola. Copia el mensaje y mándalo por el canal que prefieras.";
+    steps.forEach(function(s){ s.hidden = true; });
+    document.querySelector(".form-nav").hidden = true;
+    document.querySelector(".progress").hidden = true;
+    stepno.hidden = true;
+    result.hidden = false;
+  });
+  back.addEventListener("click", function(){ if (cur > 0) show(cur - 1); });
+
+  document.getElementById("copy").addEventListener("click", function(){
+    copied.textContent = "";
+    try {
+      navigator.clipboard.writeText(summary.textContent).then(
+        function(){ copied.textContent = "Mensaje copiado."; },
+        function(){ copied.textContent = "No se pudo copiar. Selecciona el texto y cópialo a mano."; }
+      );
+    } catch (e) { copied.textContent = "No se pudo copiar. Selecciona el texto y cópialo a mano."; }
+  });
+  document.getElementById("restart").addEventListener("click", function(){
+    document.getElementById("form").reset();
+    result.hidden = true; copied.textContent = "";
+    document.querySelector(".form-nav").hidden = false;
+    document.querySelector(".progress").hidden = false;
+    stepno.hidden = false;
+    [1,2,3].forEach(function(n){ setErr(n, ""); });
+    show(0);
+  });
+  document.getElementById("form").addEventListener("submit", function(e){ e.preventDefault(); });
+  show(0);
+})();
+</script>
+</body>
+</html>
