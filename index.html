@@ -338,8 +338,8 @@
             <option>Lo antes posible</option><option>En uno o dos meses</option><option>Sin prisa</option>
           </select></div>
         <div class="field"><p style="margin:0 0 8px;font-weight:600">Descuentos de lanzamiento (opcional)</p>
-          <p style="margin:0 0 10px;font-size:14px">Se aplican sobre el precio del proyecto, sin IVA, y se confirman por escrito en la propuesta.</p>
-          <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:8px"><input type="checkbox" id="dto-pago" style="margin-top:5px;width:auto"><label for="dto-pago" style="font-size:14px"><strong>10 %</strong> si pagas por adelantado, según se acuerde en la propuesta.</label></div>
+          <p style="margin:0 0 10px;font-size:14px">Válidos para proyectos aceptados hasta el 31 de marzo de 2027. Se aplican sobre el precio del proyecto, sin IVA, y se confirman por escrito en la propuesta.</p>
+          <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:8px"><input type="checkbox" id="dto-pago" style="margin-top:5px;width:auto"><label for="dto-pago" style="font-size:14px"><strong>10 %</strong> si pagas el 100 % al aceptar la propuesta.</label></div>
           <div style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="dto-caso" style="margin-top:5px;width:auto"><label for="dto-caso" style="font-size:14px"><strong>15 %</strong> si nos permites enseñar tu web como caso real, con tu autorización por escrito. Con las dos condiciones, <strong>20 %</strong>.</label></div></div>
         <p class="err" id="err2" role="alert"></p>
       </fieldset>
@@ -427,9 +427,9 @@
 
   function dtoTxt(){
     var p = document.getElementById("dto-pago").checked, c = document.getElementById("dto-caso").checked;
-    if (p && c) return "20 % (pago por adelantado y autorización como caso real)";
+    if (p && c) return "20 % (pago del 100 % al aceptar y autorización como caso real)";
     if (c) return "15 % (autorizo enseñar mi web como caso real)";
-    if (p) return "10 % (pago por adelantado)";
+    if (p) return "10 % (pago del 100 % al aceptar la propuesta)";
     return "ninguno";
   }
   next.addEventListener("click", function(){
