@@ -461,6 +461,8 @@ for f in glob.glob(f'{OUT}/**/*.html',recursive=True):
     var done = function(ok){
       next.disabled = false;
       summary.textContent = txt;
+      document.getElementById("copy").hidden = ok;
+      document.querySelector("#result h3").textContent = ok ? "Mensaje enviado" : "No se ha podido enviar";
       note.textContent = ok
         ? "Mensaje enviado. Te responderemos lo antes posible. Esta es la copia de lo que has enviado."
         : "No se ha podido enviar el mensaje. Copia el texto y escríbenos a " + CONTACT_EMAIL + ".";
