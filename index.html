@@ -344,6 +344,8 @@
         <legend>¿Cómo te respondemos?</legend>
         <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name"></div>
         <div class="field"><label for="dato">Correo o teléfono</label><input id="dato" name="contacto" autocomplete="email"></div>
+        <div class="field" style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="consent" style="margin-top:5px;width:auto"><label for="consent" style="font-size:14px">He leído la <a href="/privacidad/">política de privacidad</a> y acepto que se usen mis datos para responder a mi consulta.</label></div>
+        <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <p class="err" id="err3" role="alert"></p>
       </fieldset>
 
@@ -386,7 +388,8 @@
 <script>
 (function(){
   // Pon aquí el correo que recibirá los mensajes. Mientras esté vacío, el formulario solo prepara el texto para copiar.
-  var CONTACT_EMAIL = "";
+  var CONTACT_EMAIL = "vuelcos@juanpeco.com";
+  var WF_KEY = "28fe8e5c-3721-4874-9f78-8200538d1184";
 
   var steps = Array.prototype.slice.call(document.querySelectorAll("fieldset[data-step]"));
   var bars = document.querySelectorAll(".progress i");
@@ -428,6 +431,28 @@
       "Mi negocio y lo que necesito: " + val("detalle") + "\n\n" +
       "Nombre: " + val("nombre") + "\n" +
       "Contacto: " + val("dato");
+    if (!document.getElementById("consent").checked) { setErr(3, "Marca la casilla de la política de privacidad para poder enviar el mensaje."); return; }
+    if (document.getElementById("botcheck").checked) return;
+    var payload = {access_key: WF_KEY, subject: "Nuevo contacto desde la web VUELCOS", from_name: "Web VUELCOS", name: val("nombre"), message: txt, botcheck: ""};
+    if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val("dato"))) payload.email = val("dato");
+    next.disabled = true; next.textContent = "Enviando…";
+    var done = function(ok){
+      next.disabled = false;
+      summary.textContent = txt;
+      note.textContent = ok
+        ? "Mensaje enviado. Te responderemos lo antes posible. Esta es la copia de lo que has enviado."
+        : "No se ha podido enviar el mensaje. Copia el texto y escríbenos a " + CONTACT_EMAIL + ".";
+      steps.forEach(function(s){ s.hidden = true; });
+      document.querySelector(".form-nav").hidden = true;
+      document.querySelector(".progress").hidden = true;
+      stepno.hidden = true;
+      result.hidden = false;
+    };
+    fetch("https://api.web3forms.com/submit", {method: "POST", headers: {"Content-Type": "application/json", "Accept": "application/json"}, body: JSON.stringify(payload)})
+      .then(function(r){ return r.json(); })
+      .then(function(d){ done(!!(d && d.success)); })
+      .catch(function(){ done(false); });
+    return;
     summary.textContent = txt;
     note.textContent = CONTACT_EMAIL
       ? "Copia el mensaje y envíalo a " + CONTACT_EMAIL + ". Esta página no envía nada por sí sola."
