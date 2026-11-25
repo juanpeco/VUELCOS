@@ -2,6 +2,7 @@ LEEME-SEO.md
 wrangler.jsonc
 .gitignore
 .assetsignore
+_generador
 .git
 node_modules
 .wrangler

@@ -1,0 +1,550 @@
+S.landing.title :: Landing page para tu oferta, desde 300 € | VUELCOS
+S.landing.desc :: Una página con un solo objetivo: que te escriban, reserven o compren. Desde 300 € sin IVA. Alcance y precio por escrito antes de empezar.
+S.landing.lead :: Para cuando no necesitas una web entera: necesitas que quien llega haga una sola cosa. Pedir cita, escribirte por WhatsApp, reservar una plaza o comprar un producto.
+S.landing.who[0] :: Un negocio que lanza una promoción, un curso o un servicio concreto.
+S.landing.who[1] :: Un autónomo que hoy solo tiene redes sociales y quiere un sitio al que mandar a la gente.
+S.landing.who[2] :: Quien quiere probar una idea antes de montar una web completa.
+S.landing.incl[0][1] :: Colocamos tus textos con un único botón repetido donde toca. Sin menú con diez enlaces que distraigan.
+S.landing.incl[1][1] :: Se piensa primero para pantalla pequeña, porque es donde la mayoría abrirá el enlace.
+S.landing.incl[2][1] :: Botón de llamada, WhatsApp o formulario, según lo que de verdad uses para atender.
+S.landing.incl[3][0] :: Base técnica para buscadores
+S.landing.incl[3][1] :: Título, descripción, datos estructurados y velocidad de carga cuidados desde el primer día.
+S.landing.notin[0] :: No es una web con varias secciones: si necesitas explicar cinco servicios distintos, mira la web de negocio.
+S.landing.notin[1] :: Un logo, si lo necesitas y no figura en tu propuesta, se presupuesta aparte.
+S.landing.notin[2] :: No incluye tienda con carrito ni sistema de reservas con calendario: son servicios aparte.
+S.landing.notin[3] :: No incluye dominio ni alojamiento: se presupuestan por separado.
+S.landing.need[0] :: Qué quieres que haga la persona que llega (una sola acción).
+S.landing.need[1] :: Los textos de la página (titular, beneficios y pruebas), redactados por ti.
+S.landing.need[2] :: Fotos propias si las tienes; si no, lo hablamos antes de usar imágenes genéricas.
+S.landing.need[3] :: Cómo prefieres que te contacten y en qué horario atiendes.
+S.landing.faq[0][0] :: ¿Una landing puede salir en Google?
+S.landing.faq[0][1] :: Puede, pero una sola página compite por pocas búsquedas. Sirve mejor para recibir visitas que tú mismo diriges (anuncios, redes, un cartel con QR). Si lo que quieres es aparecer por varias búsquedas distintas, necesitas más páginas.
+S.landing.faq[1][1] :: Sí. Se construye con la misma base que la web de negocio, así que añadir secciones o páginas no obliga a empezar de cero.
+S.landing.faq[2][1] :: El precio es sin IVA. Se indica en la propuesta si se añade o no según tu país y si contratas como empresa o como particular.
+S.web-de-negocio.title :: Web de negocio profesional, desde 800 € | VUELCOS
+S.web-de-negocio.desc :: Web de 3 a 6 páginas para tu negocio: quién eres, qué haces y cómo contactarte. Desde 800 € sin IVA, con alcance y precio por escrito.
+S.web-de-negocio.h1 :: La web que te presenta ante quien aún no te conoce
+S.web-de-negocio.lead :: Tres a seis páginas que responden lo que alguien se pregunta antes de llamarte: qué haces exactamente, para quién, cuánto cuesta aproximadamente y cómo empezar.
+S.web-de-negocio.who[0] :: Un negocio local o un despacho que hoy depende del boca a boca.
+S.web-de-negocio.who[1] :: Un profesional con varios servicios que necesita explicarlos por separado.
+S.web-de-negocio.who[2] :: Quien tiene una web antigua que no se ve bien en el móvil y quiere rehacerla.
+S.web-de-negocio.incl[0][0] :: Páginas con intención propia
+S.web-de-negocio.incl[0][1] :: Inicio, servicios, sobre ti, contacto y, si procede, una página por cada servicio importante para que cada una pueda aparecer por su búsqueda.
+S.web-de-negocio.incl[1][1] :: Dirección, horario, teléfono y tipo de negocio marcados de forma estructurada, coherentes con tu ficha de Google.
+S.web-de-negocio.incl[2][0] :: Tus textos, bien colocados
+S.web-de-negocio.incl[2][1] :: Maquetamos los textos que nos pasas. Si prefieres que los redactemos, es el servicio de textos y SEO, aparte.
+S.web-de-negocio.incl[3][1] :: Si más adelante necesitas reservas o tienda, se añaden sobre esta misma base.
+S.web-de-negocio.notin[0] :: No incluye redactar tus textos ni un blog continuo: eso entra en textos y SEO.
+S.web-de-negocio.notin[2] :: No promete posiciones concretas en Google: nadie puede prometerlas honestamente.
+S.web-de-negocio.notin[3] :: Dominio y alojamiento se presupuestan aparte.
+S.web-de-negocio.need[0] :: Los textos de cada página, redactados por ti.
+S.web-de-negocio.need[1] :: Lista de servicios con una frase sobre cada uno y, si puedes, un rango de precio orientativo.
+S.web-de-negocio.need[2] :: Zona donde trabajas y horarios.
+S.web-de-negocio.need[3] :: Dos o tres casos reales o comentarios de clientes que puedas publicar.
+S.web-de-negocio.need[4] :: Textos legales: datos del titular para el aviso legal y la política de privacidad.
+S.web-de-negocio.faq[0][1] :: De tres a seis, según lo que necesites explicar. Si hacen falta más, se indica en la propuesta antes de empezar.
+S.web-de-negocio.faq[1][0] :: ¿Por qué una página por servicio?
+S.web-de-negocio.faq[1][1] :: Porque quien busca un servicio concreto quiere llegar a una página que hable justo de eso. Una única página con todo suele quedarse en medias tintas para todas las búsquedas.
+S.web-de-negocio.faq[2][0] :: ¿Cuánto tarda en notarse en Google?
+S.web-de-negocio.faq[2][1] :: Depende de la competencia de tu zona y sector. Un sitio nuevo necesita tiempo para ser rastreado y evaluado; no se puede fijar un plazo fiable de antemano.
+S.tienda-online.title :: Tienda online sencilla, desde 1.200 € | VUELCOS
+S.tienda-online.desc :: Tienda online para vender pocos productos con una compra clara. Desde 1.200 € sin IVA. Alcance y precio por escrito antes de empezar.
+S.tienda-online.h1 :: Vender pocos productos, sin complicarte
+S.tienda-online.lead :: Una tienda pensada para catálogos pequeños: fichas claras, compra en pocos pasos y pagos y envíos que puedas gestionar tú sin un equipo detrás.
+S.tienda-online.who[0] :: Un comercio local que quiere vender fuera de su horario.
+S.tienda-online.who[1] :: Quien elabora o revende una gama corta de productos.
+S.tienda-online.who[2] :: Un negocio que hoy vende por mensajes directos y se pierde pedidos entre conversaciones.
+S.tienda-online.incl[0][1] :: Fotos, variantes, disponibilidad y tiempos de entrega visibles antes de pagar, que es donde se abandonan más compras.
+S.tienda-online.incl[1][0] :: Pago y envíos configurados
+S.tienda-online.incl[1][1] :: Pasarela de pago y tarifas de envío según lo que ofrezcas, sin prometer más de lo que puedes cumplir.
+S.tienda-online.incl[2][0] :: Información legal de venta
+S.tienda-online.incl[2][1] :: Condiciones de compra, devoluciones y política de privacidad preparadas para que las revises con tu gestor.
+S.tienda-online.incl[3][0] :: Datos estructurados de producto
+S.tienda-online.incl[3][1] :: Nombre, precio y disponibilidad marcados para que los buscadores los puedan interpretar.
+S.tienda-online.notin[0] :: No es una tienda con cientos de referencias, integración con almacén o marketplaces: eso se presupuesta como proyecto aparte.
+S.tienda-online.notin[2] :: El carrito y el cobro funcionan con una herramienta externa de pago; la web en sí es estática.
+S.tienda-online.notin[3] :: Las comisiones de la pasarela de pago y de la plataforma las fija cada proveedor; se explican en la propuesta pero no están incluidas en el precio.
+S.tienda-online.notin[4] :: Dominio y alojamiento, aparte.
+S.tienda-online.need[0] :: Catálogo con nombre, precio y fotos de cada producto, y los textos de cada ficha.
+S.tienda-online.need[1] :: Cómo envías, a dónde y cuánto cobras por ello.
+S.tienda-online.need[2] :: Política de devoluciones que realmente vayas a aplicar.
+S.tienda-online.need[3] :: Quién gestiona los pedidos y con qué frecuencia revisa la tienda.
+S.tienda-online.faq[0][0] :: ¿Qué obligaciones legales tiene vender online?
+S.tienda-online.faq[0][1] :: Hay información que debe estar visible y reglas sobre devoluciones a consumidores. En la UE existe, con carácter general, un derecho de desistimiento de 14 días en ventas a distancia a consumidores, con excepciones. Revisa tu caso con un gestor: no es asesoramiento jurídico.
+S.tienda-online.faq[1][0] :: ¿Y el IVA si vendo fuera de España?
+S.tienda-online.faq[1][1] :: Depende del país del cliente y de si es empresa o particular. Es una cuestión fiscal que debes confirmar con tu gestor antes de abrir la tienda.
+S.tienda-online.faq[2][0] :: ¿Puedo vender solo cuatro productos?
+S.tienda-online.faq[2][1] :: Sí, y es el caso para el que está pensada esta tienda.
+S.reservas-y-citas.title :: Reservas y citas online para tu negocio | VUELCOS
+S.reservas-y-citas.desc :: Que tus clientes elijan hora sin escribirte antes: sistema de citas o reservas integrado en tu web. Presupuesto según alcance, por escrito.
+S.reservas-y-citas.h1 :: Que reserven sin tener que escribirte
+S.reservas-y-citas.lead :: Cada mensaje de «¿tienes hueco el jueves?» es tiempo que no dedicas a trabajar. Un sistema de citas bien integrado lo resuelve, siempre que esté configurado con tus reglas reales.
+S.reservas-y-citas.who[0] :: Clínicas, peluquerías, centros de estética o estudios con agenda de citas.
+S.reservas-y-citas.who[1] :: Restaurantes y alojamientos que quieren ordenar las reservas.
+S.reservas-y-citas.who[2] :: Profesionales que hoy gestionan la agenda por teléfono o WhatsApp.
+S.reservas-y-citas.incl[0][0] :: Tus reglas, no las de una plantilla
+S.reservas-y-citas.incl[0][1] :: Duración por servicio, descansos, antelación mínima, cancelaciones y aforo, tal como las aplicas.
+S.reservas-y-citas.incl[1][1] :: El cliente reserva desde la página de cada servicio, sin salir a un sitio que parece de otro negocio.
+S.reservas-y-citas.incl[2][1] :: Mensajes de confirmación y recordatorio para reducir las citas a las que nadie se presenta.
+S.reservas-y-citas.incl[3][0] :: Datos personales con cuidado
+S.reservas-y-citas.incl[3][1] :: Se recoge lo imprescindible y se informa de cómo se usa; revisa con tu gestor la política de privacidad.
+S.reservas-y-citas.notin[0] :: No es una aplicación a medida desde cero: se parte de herramientas de reservas existentes y se integran.
+S.reservas-y-citas.notin[1] :: Las cuotas de la herramienta de reservas, si las hay, las cobra su proveedor y no están incluidas.
+S.reservas-y-citas.notin[2] :: Si necesitas integración con un software de gestión concreto, hay que valorarla antes de dar precio.
+S.reservas-y-citas.need[0] :: Servicios con su duración y, si varían, quién los realiza.
+S.reservas-y-citas.need[1] :: Horarios, festivos y descansos.
+S.reservas-y-citas.need[2] :: Qué ocurre si alguien cancela o no se presenta.
+S.reservas-y-citas.need[3] :: Herramienta que ya uses, si tienes alguna.
+S.reservas-y-citas.faq[0][0] :: ¿Por qué no tiene un precio cerrado?
+S.reservas-y-citas.faq[0][1] :: Porque depende de cuántos servicios, personas y reglas haya y de si ya usas alguna herramienta. Se presupuesta tras ver tu caso, con alcance y precio por escrito.
+S.reservas-y-citas.faq[1][0] :: ¿Puedo mantener mi agenda actual?
+S.reservas-y-citas.faq[1][1] :: Depende de la herramienta que uses. Se revisa antes de comprometer nada.
+S.reservas-y-citas.faq[2][0] :: ¿Se puede reservar desde el móvil?
+S.reservas-y-citas.faq[2][1] :: Debe poder. Es la primera prueba que se hace antes de entregar.
+S.textos-y-seo.title :: Textos, imágenes y SEO para tu web | VUELCOS
+S.textos-y-seo.desc :: Contenido propio y SEO técnico para una web nueva o ya existente: textos específicos de tu negocio. Presupuesto según alcance, por escrito.
+S.textos-y-seo.h1 :: Contenido que dice algo de ti
+S.textos-y-seo.lead :: Una web puede estar bien hecha y no decir nada. Aquí trabajamos lo que se lee: qué ofreces, a quién, con qué diferencias reales y qué responder a las dudas antes de que te las pregunten.
+S.textos-y-seo.who[0] :: Quien ya tiene web pero con textos genéricos o copiados de plantillas.
+S.textos-y-seo.who[1] :: Un negocio que quiere una página por cada servicio o zona donde trabaja.
+S.textos-y-seo.who[2] :: Quien necesita ordenar títulos, descripciones y estructura para que los buscadores lo interpreten.
+S.textos-y-seo.incl[0][0] :: Entrevista y materia prima
+S.textos-y-seo.incl[0][1] :: Partimos de lo que respondes sobre tus clientes, tus procesos y tus límites. Es lo que diferencia un texto de otro.
+S.textos-y-seo.incl[1][0] :: Estructura por intención de búsqueda
+S.textos-y-seo.incl[1][1] :: Cada página responde a una búsqueda concreta y enlaza con las demás de forma lógica.
+S.textos-y-seo.incl[2][1] :: Títulos, descripciones, encabezados, datos estructurados, mapa del sitio y velocidad.
+S.textos-y-seo.incl[3][1] :: Se priorizan tus fotos reales; si se usan ilustraciones o imágenes generadas, se indica y se evita aparentar lo que no son.
+S.textos-y-seo.notin[0] :: No incluye compra de enlaces ni técnicas para forzar la posición: pueden perjudicarte.
+S.textos-y-seo.notin[1] :: No se garantiza ninguna posición ni plazo en Google.
+S.textos-y-seo.notin[2] :: La autoridad externa (menciones y enlaces de otras webs) se construye poco a poco y no se compra aquí.
+S.textos-y-seo.need[0] :: Acceso a la web actual, si existe.
+S.textos-y-seo.need[1] :: Servicios y zonas que quieres trabajar, por orden de importancia.
+S.textos-y-seo.need[2] :: Opiniones o casos que puedas publicar con permiso.
+S.textos-y-seo.need[3] :: Claridad sobre qué no quieres prometer.
+S.textos-y-seo.faq[0][0] :: ¿Quién escribe los textos?
+S.textos-y-seo.faq[0][1] :: Por defecto, tú: los textos son responsabilidad de quien contrata. Si prefieres que los redactemos nosotros, es este servicio y se cobra aparte. La IA es la herramienta con la que trabajamos y nos ahorra tiempo; lo que se publica lo apruebas tú.
+S.textos-y-seo.faq[1][1] :: Depende del número de páginas y del trabajo previo. Se presupuesta tras ver tu web o tu proyecto.
+S.textos-y-seo.faq[2][0] :: ¿Garantizáis estar en la primera página?
+S.textos-y-seo.faq[2][1] :: No. Nadie puede garantizarlo con honestidad. Se trabaja lo que sí depende de la web.
+S.mantenimiento.title :: Mantenimiento web desde 25 €/mes | VUELCOS
+S.mantenimiento.desc :: Que tu web siga al día sin depender de nadie más: cambios de contenido y revisión técnica. Desde 25 € al mes sin IVA, por escrito.
+S.mantenimiento.h1 :: Que la web no se quede parada
+S.mantenimiento.lead :: Cambian los horarios, sube un precio, se incorpora alguien al equipo. Una web con datos desfasados resta confianza justo a quien estaba a punto de contactarte.
+S.mantenimiento.who[0] :: Negocios con cambios frecuentes de horarios, precios o equipo.
+S.mantenimiento.who[1] :: Quien no quiere aprender a tocar la web ni pagar un proyecto cada vez que cambia algo.
+S.mantenimiento.who[2] :: Webs con formularios o reservas que conviene revisar de vez en cuando.
+S.mantenimiento.incl[0][1] :: Textos, fotos, precios y horarios actualizados cuando me lo pidas, con los límites que figuren en el plan.
+S.mantenimiento.incl[1][1] :: Comprobar que formularios, enlaces y reservas siguen funcionando.
+S.mantenimiento.incl[2][1] :: Seguimiento de lo que haga falta para poder recuperar la web si algo falla.
+S.mantenimiento.incl[3][1] :: Escribes a una persona que conoce tu web, no a un buzón de soporte.
+S.mantenimiento.notin[0] :: No es un rediseño: un cambio grande de estructura se presupuesta aparte.
+S.mantenimiento.notin[1] :: El límite de cambios al mes lo fija el plan acordado por escrito.
+S.mantenimiento.notin[2] :: Dominio y alojamiento los contratas tú a tu nombre y se renuevan con su proveedor; su coste es aparte.
+S.mantenimiento.need[0] :: Cómo prefieres pedir los cambios.
+S.mantenimiento.need[1] :: Qué cambios son habituales (precios, horarios, ofertas).
+S.mantenimiento.need[2] :: Quién autoriza cada cambio en tu negocio.
+S.mantenimiento.faq[0][0] :: ¿Qué incluye exactamente el plan?
+S.mantenimiento.faq[0][1] :: Se detalla por escrito: tipo de cambios, límite mensual y plazo de respuesta. El precio «desde» es el punto de partida para el plan más básico.
+S.mantenimiento.faq[1][1] :: Debe poder, con un aviso razonable. Las condiciones se fijan por escrito al contratar.
+S.mantenimiento.faq[2][0] :: ¿Sirve si la web no la hicisteis vosotros?
+S.mantenimiento.faq[2][1] :: Depende de dónde esté alojada y cómo esté hecha. Se revisa antes de aceptarla.
+C.abogados.title :: Diseño web para abogados y despachos | VUELCOS
+C.abogados.desc :: Web para abogados que explica áreas, honorarios orientativos y cómo empezar. Desde 800 € sin IVA, y sin promesas de resultado.
+C.abogados.h1 :: Una web de despacho que explica sin prometer
+C.abogados.lead :: Quien busca abogado suele tener un problema concreto, poco tiempo y miedo a que le cuenten lo que quiere oír. La web tiene que demostrar criterio, no vender resultados.
+C.abogados.visitors[0][0] :: Busca por problema, no por especialidad
+C.abogados.visitors[0][1] :: Alguien escribe «me han despedido» o «herencia sin testamento», no «derecho laboral». Cada área de práctica merece su propia página, escrita desde la pregunta del cliente.
+C.abogados.visitors[1][0] :: Quiere saber cómo se trabaja
+C.abogados.visitors[1][1] :: Primera consulta, qué documentación llevar, cómo se cobra y qué pasos vienen después. Si no lo ve, llama a otro despacho o no llama.
+C.abogados.visitors[2][0] :: Comprueba quién es la persona
+C.abogados.visitors[2][1] :: Colegiación, formación y el tipo de casos que lleva. Una foto real y una trayectoria clara pesan más que frases genéricas.
+C.abogados.must[0][1] :: Familia, laboral, herencias, inmobiliario… cada una con los casos típicos, qué se puede esperar y qué no.
+C.abogados.must[1][1] :: Si no das cifras, explica de qué dependen y cómo se presupuesta. Evita la sensación de caja negra.
+C.abogados.must[2][0] :: Contacto proporcional a la urgencia
+C.abogados.must[2][1] :: Teléfono visible, formulario corto y respuesta que cumplas; si prometes responder en el día, que sea cierto.
+C.abogados.must[3][0] :: Datos del despacho y colegiación
+C.abogados.must[3][1] :: Titular, número de colegiado y datos legales en el pie, coherentes con tu ficha de Google.
+C.abogados.care[0] :: La publicidad de la abogacía tiene normas deontológicas propias, que fija cada colegio. Antes de publicar, consulta el código deontológico de tu colegio y evita promesas de resultado o comparaciones.
+C.abogados.care[1] :: No publicamos casos reales sin tu confirmación expresa de que el cliente lo autoriza.
+C.abogados.care[2] :: La política de privacidad y el aviso legal los revisas tú o tu gestor: nosotros dejamos la estructura, no damos asesoramiento jurídico.
+C.abogados.need[0] :: Áreas que quieres trabajar, por orden de importancia.
+C.abogados.need[1] :: Los tres tipos de consulta más frecuentes y cómo los resuelves en la primera reunión.
+C.abogados.need[2] :: Cómo cobras (tarifa, minuta, fases) aunque no quieras publicar cifras.
+C.abogados.need[3] :: Ciudad y zonas donde ejerces.
+C.abogados.faq[0][1] :: No es obligatorio. Sí conviene explicar de qué depende el presupuesto. Si decides publicar tarifas, comprueba antes lo que permite tu colegio.
+C.abogados.faq[1][0] :: ¿Puedo escribir sobre casos?
+C.abogados.faq[1][1] :: Sí, como explicaciones generales o con consentimiento claro del cliente. Nunca datos que permitan identificarlo sin su permiso.
+C.abogados.faq[2][1] :: Para empezar, sí. Pero para aparecer por varias áreas necesitas una página por cada una.
+C.clinicas.name :: Clínicas dentales, fisioterapia y psicología
+C.clinicas.title :: Diseño web para clínicas dentales y de salud | VUELCOS
+C.clinicas.desc :: Web para clínicas dentales, de fisioterapia y psicología: tratamientos explicados, equipo y cita fácil. Desde 800 € sin IVA.
+C.clinicas.h1 :: Una clínica que se explica antes de que llamen
+C.clinicas.lead :: Quien busca clínica compara confianza antes que precio: quién me atiende, qué me van a hacer y cuánto me va a costar enterarme. La web resuelve esas tres cosas.
+C.clinicas.visitors[0][1] :: Teme dolor, coste o que le compliquen el problema. Explicar en qué consiste cada tratamiento, con lenguaje claro, reduce esa barrera.
+C.clinicas.visitors[1][1] :: Foto, formación, colegiación y especialidad de cada profesional. En salud, la persona importa.
+C.clinicas.visitors[2][1] :: Dirección, aparcamiento, transporte y horarios claros, con la ficha de Google bien alineada.
+C.clinicas.must[0][0] :: Una página por tratamiento
+C.clinicas.must[0][1] :: Implantes, ortodoncia, fisioterapia deportiva, ansiedad… cada uno responde a una búsqueda distinta.
+C.clinicas.must[1][1] :: Una ficha por profesional, con lo que haga y lo que no haga.
+C.clinicas.must[2][1] :: Reserva online o formulario con franjas reales; confirmación y recordatorio.
+C.clinicas.must[3][0] :: Información de primera visita
+C.clinicas.must[3][1] :: Qué pasa en la primera sesión, cuánto dura y qué traer. Cierra dudas que de otro modo se quedan en un teléfono sin llamar.
+C.clinicas.care[0] :: La publicidad sanitaria está regulada y las reglas varían según la profesión y la comunidad autónoma. Antes de publicar textos sobre tratamientos o resultados, revísalos con tu colegio profesional o la administración sanitaria que corresponda.
+C.clinicas.care[1] :: No usamos fotos de pacientes ni de «antes y después» sin tu confirmación de que existe permiso y de que la normativa lo permite.
+C.clinicas.care[2] :: Los datos de salud son especialmente protegidos: los formularios piden lo mínimo y lo de la primera visita se recoge en consulta, no en la web.
+C.clinicas.need[0] :: Tratamientos que más quieres trabajar y los que menos.
+C.clinicas.need[1] :: Equipo: nombre, número de colegiado, especialidad.
+C.clinicas.need[2] :: Fotos reales de la clínica y del equipo.
+C.clinicas.need[3] :: Cómo gestionas hoy las citas.
+C.clinicas.faq[0][0] :: ¿Puedo poner precios de tratamientos?
+C.clinicas.faq[0][1] :: Conviene al menos explicar de qué depende el coste. Comprueba antes qué te permite tu colegio profesional publicar.
+C.clinicas.faq[1][0] :: ¿Qué pasa con las fotos de pacientes?
+C.clinicas.faq[1][1] :: No se publican sin permiso claro y sin comprobar que la normativa lo permite.
+C.clinicas.faq[2][0] :: ¿Funciona con mi agenda actual?
+C.clinicas.faq[2][1] :: Depende del software que uses. Se valora antes de dar presupuesto.
+C.hosteleria.name :: Restaurantes, hoteles y casas rurales
+C.hosteleria.title :: Diseño web para restaurantes y hoteles | VUELCOS
+C.hosteleria.desc :: Web para restaurantes, hoteles y casas rurales: carta, fotos y reservas que funcionan en el móvil. Desde 800 € sin IVA.
+C.hosteleria.h1 :: La web de quien decide dónde comer o dormir desde el móvil
+C.hosteleria.lead :: Casi nadie lee una web de hostelería sentado: la abre en la calle, con prisa, mirando si hay mesa, qué cuesta y cómo llegar. Si tarda o la carta es un PDF ilegible, pasa al siguiente.
+C.hosteleria.visitors[0][0] :: Mira carta y horario primero
+C.hosteleria.visitors[0][1] :: Carta en texto (no solo imagen o PDF), horario real y si hace falta reservar. Es lo primero que busca.
+C.hosteleria.visitors[1][1] :: Fotos propias del local, la sala y los platos, no de stock. Define expectativas antes de llegar.
+C.hosteleria.visitors[2][0] :: Si es alojamiento, compara
+C.hosteleria.visitors[2][1] :: Precio, qué incluye, entorno y cómo reservar sin intermediarios, si puedes asumirlo.
+C.hosteleria.must[0][0] :: Carta que se lee en el móvil
+C.hosteleria.must[0][1] :: Texto real, con alérgenos, que se actualiza sin rehacer un PDF.
+C.hosteleria.must[1][1] :: Teléfono, WhatsApp o reserva online según lo que atiendas; no prometas lo que no puedas gestionar.
+C.hosteleria.must[2][1] :: Mapa, indicaciones y accesibilidad, enlazado con tu ficha de Google.
+C.hosteleria.must[3][0] :: Páginas por motivo de búsqueda
+C.hosteleria.must[3][1] :: Menús de grupo, celebraciones, escapadas, mascotas admitidas: cada uno responde una búsqueda distinta.
+C.hosteleria.care[0] :: La información de alérgenos es obligatoria en la carta; revisa con tu gestor o con tu administración local cómo debe mostrarse en la web.
+C.hosteleria.care[1] :: Si publicas precios, mantenlos al día: un precio desfasado genera discusiones en el local.
+C.hosteleria.care[2] :: Los portales de reservas pueden complementar la web, pero conviene saber cuánto cobran antes de depender de ellos.
+C.hosteleria.need[0] :: Carta o tarifas actuales y alérgenos.
+C.hosteleria.need[1] :: Fotos propias del local, platos y habitaciones.
+C.hosteleria.need[2] :: Cómo quieres recibir reservas y con cuánta antelación.
+C.hosteleria.need[3] :: Festivos, vacaciones y aforo.
+C.hosteleria.faq[0][0] :: ¿Puedo cambiar la carta yo mismo?
+C.hosteleria.faq[0][1] :: Es mejor tener una forma sencilla de hacerlo o contratar el mantenimiento para cambios puntuales. Se decide al empezar.
+C.hosteleria.faq[1][1] :: Para un evento o una temporada, sí. Para el día a día del local, es mejor una web con varias páginas.
+C.hosteleria.faq[2][0] :: ¿Qué pasa con Google Maps?
+C.hosteleria.faq[2][1] :: La ficha de Google se trabaja en paralelo: nombre, dirección y horario deben coincidir con la web.
+C.inmobiliarias.title :: Diseño web para inmobiliarias | VUELCOS
+C.inmobiliarias.desc :: Web para inmobiliarias que no depende solo de portales: fichas claras, zonas trabajadas y captación de propietarios. Desde 800 € sin IVA.
+C.inmobiliarias.h1 :: Una web para captar propietarios, no solo para enseñar pisos
+C.inmobiliarias.lead :: Los portales llenan de visitas, pero el cliente es del portal. Tu web sirve para lo que ellos no hacen: demostrar que conoces tu zona y captar al propietario que quiere vender contigo.
+C.inmobiliarias.visitors[0][1] :: Busca fotos, planos, precio, zona y gastos. Si tu ficha da menos que el portal, no vuelve.
+C.inmobiliarias.visitors[1][0] :: Propietario que decide a quién confiar
+C.inmobiliarias.visitors[1][1] :: Quiere ver cómo trabajas, cuánto tardas y cuánto cobras. Esa página rara vez existe y es la que más captación puede traer.
+C.inmobiliarias.visitors[2][0] :: Alguien que busca por barrio
+C.inmobiliarias.visitors[2][1] :: «Piso en [barrio]» y «inmobiliaria [barrio]» son búsquedas locales: cada zona merece su propia página.
+C.inmobiliarias.must[0][0] :: Fichas que respeten la normativa
+C.inmobiliarias.must[0][1] :: Datos exigidos en el anuncio del inmueble, entre ellos la calificación energética; comprueba qué debe constar en tu comunidad.
+C.inmobiliarias.must[1][1] :: Qué tipo de vivienda hay, rangos orientativos, servicios cercanos y tu experiencia real en la zona.
+C.inmobiliarias.must[2][1] :: Proceso, comisiones, valoración y qué haces distinto. Es la pieza que convierte propietarios.
+C.inmobiliarias.must[3][1] :: Botón de llamada o WhatsApp en cada ficha con el nombre de quien atiende.
+C.inmobiliarias.care[0] :: Sincronizar el catálogo con los portales requiere herramienta o conexión adicional que hay que valorar aparte.
+C.inmobiliarias.care[1] :: No inventamos datos de mercado de tu zona: se parte de lo que tú sabes y de fuentes que se puedan citar.
+C.inmobiliarias.care[2] :: Si tienes catálogo grande y cambiante, necesitarás un sistema para gestionarlo y no basta una web estática.
+C.inmobiliarias.need[0] :: Zonas en las que trabajas por orden de importancia.
+C.inmobiliarias.need[1] :: Cuántos inmuebles tienes y con qué frecuencia cambian.
+C.inmobiliarias.need[2] :: Cómo trabajas con propietarios: exclusiva, comisión, servicios incluidos.
+C.inmobiliarias.need[3] :: Herramienta o software inmobiliario que uses.
+C.inmobiliarias.faq[0][0] :: ¿Puedo mostrar mis inmuebles sin portales?
+C.inmobiliarias.faq[0][1] :: Sí, con las fichas en tu web. Si cambian mucho, hay que valorar cómo mantener el catálogo.
+C.inmobiliarias.faq[1][1] :: Con páginas que expliquen tu proceso y tu conocimiento de la zona, más una valoración o un contacto sencillo.
+C.inmobiliarias.faq[2][0] :: ¿Sustituye a los portales?
+C.inmobiliarias.faq[2][1] :: No tiene por qué: son canales distintos. Tu web trabaja el largo plazo y tu nombre.
+C.reformas.name :: Reformas, construcción y oficios
+C.reformas.title :: Diseño web para reformas, fontaneros y oficios | VUELCOS
+C.reformas.desc :: Web para empresas de reformas, construcción y oficios: obras reales, zona de trabajo y presupuesto fácil. Desde 800 € sin IVA.
+C.reformas.h1 :: Una web que enseña obras reales y facilita el presupuesto
+C.reformas.lead :: Quien necesita un fontanero o una reforma busca confianza y rapidez. La web que convence enseña trabajos reales, dice dónde trabajas y facilita pedir un presupuesto sin vueltas.
+C.reformas.visitors[0][0] :: Tiene prisa o miedo a que le engañen
+C.reformas.visitors[0][1] :: Quiere ver trabajos reales, saber cuánto tardas en responder y cómo se fija el precio.
+C.reformas.visitors[1][0] :: Busca por servicio y por zona
+C.reformas.visitors[1][1] :: «Fontanero en [ciudad]», «reforma de baño [barrio]»: cada servicio y cada zona importante pide su página.
+C.reformas.visitors[2][0] :: Quiere ver antes de decidir
+C.reformas.visitors[2][1] :: Fotos de obras propias, con una frase de qué se hizo y cuánto duró, valen más que cualquier eslogan.
+C.reformas.must[0][1] :: Reforma integral, baños, cocinas, fontanería, cerrajería… con los casos típicos y lo que incluye.
+C.reformas.must[1][0] :: Galería de trabajos reales
+C.reformas.must[1][1] :: Antes y después propios, con contexto: tipo de vivienda, trabajo y plazo.
+C.reformas.must[2][1] :: Dónde trabajas y dónde no, para no recibir llamadas que no puedes atender.
+C.reformas.must[3][1] :: Formulario con fotos adjuntas o WhatsApp directo, y una respuesta clara de lo que necesitas saber para presupuestar.
+C.reformas.care[0] :: No prometas disponibilidad 24 horas ni plazos exactos si no puedes cumplirlos; es lo primero que se vuelve en tu contra en una reseña.
+C.reformas.care[1] :: Si publicas precios cerrados, que sean ciertos; si no, explica de qué dependen.
+C.reformas.care[2] :: Algunos trabajos requieren habilitaciones o carnés profesionales; si los tienes, muéstralos, y si no, no los menciones.
+C.reformas.need[0] :: Fotos propias de obras terminadas, con permiso del cliente si se reconoce el domicilio.
+C.reformas.need[1] :: Servicios por orden de importancia y zonas donde trabajas.
+C.reformas.need[2] :: Cómo se fija el presupuesto y qué información necesitas del cliente.
+C.reformas.need[3] :: Si atiendes urgencias, en qué horario y con qué condiciones.
+C.reformas.faq[0][1] :: Si ofreces un solo servicio en una zona, sí. Si ofreces varios, una web con página por servicio capta más búsquedas.
+C.reformas.faq[1][1] :: Orientativos y con criterio, mejor que nada. Sé honesto sobre lo que cambia el precio.
+C.reformas.faq[2][0] :: ¿Qué pasa con las reseñas?
+C.reformas.faq[2][1] :: Se enlazan a tu ficha de Google. Las reseñas reales son tu mejor activo; se piden con tacto, no se inventan.
+C.estetica.name :: Estética, peluquerías y centros de bienestar
+C.estetica.title :: Diseño web para estética y peluquerías | VUELCOS
+C.estetica.desc :: Web para centros de estética, peluquerías y bienestar: servicios, tarifas y reserva online con buena imagen. Desde 800 € sin IVA.
+C.estetica.h1 :: Tu local en imagen, y la cita a un toque
+C.estetica.lead :: En estética y peluquería se elige con los ojos y se reserva con el pulgar. La web tiene que verse bien, explicar los servicios con precios claros y dejar reservar sin llamar.
+C.estetica.visitors[0][0] :: Mira fotos antes que textos
+C.estetica.visitors[0][1] :: Resultados reales, el local y el equipo. Fotos de stock restan credibilidad inmediata.
+C.estetica.visitors[1][1] :: Tarifas claras por servicio y duración. Si hay que llamar para saber cuánto cuesta, muchos no llaman.
+C.estetica.visitors[2][0] :: Reserva desde el móvil, fuera de horario
+C.estetica.visitors[2][1] :: Muchas citas se piden de noche o en el trabajo. Si solo se puede llamar, se pierden.
+C.estetica.must[0][0] :: Servicios con tarifa y duración
+C.estetica.must[0][1] :: Lista clara por categorías, con lo que incluye cada tratamiento.
+C.estetica.must[1][1] :: Trabajos reales, con permiso, y equipo con nombre y especialidad.
+C.estetica.must[2][1] :: Elegir servicio, profesional y hora, con confirmación y recordatorio.
+C.estetica.must[3][1] :: Una página que los explique sin letra pequeña.
+C.estetica.care[0] :: Si ofreces tratamientos con carácter sanitario o aparatología, la información que puedes publicar puede estar sujeta a normativa específica; compruébalo antes de publicar promesas de resultado.
+C.estetica.care[1] :: No publicamos fotos de clientes sin su permiso claro.
+C.estetica.care[2] :: Si usas una herramienta de reservas con cuota, su coste es aparte y conviene saberlo antes.
+C.estetica.need[0] :: Carta de servicios con precios y duración.
+C.estetica.need[1] :: Fotos propias del local y trabajos.
+C.estetica.need[3] :: Cómo gestionas hoy las citas, cancelaciones y bonos.
+C.estetica.faq[0][0] :: ¿Puedo integrar mi agenda actual?
+C.estetica.faq[0][1] :: Depende de la herramienta que uses. Se valora antes de dar presupuesto.
+C.estetica.faq[1][1] :: Se enlazan, pero no sustituyen a la web: no se pueden buscar por servicio ni reservar de la misma manera.
+C.estetica.faq[2][0] :: ¿Sirve una landing para un solo tratamiento?
+C.estetica.faq[2][1] :: Para una promoción o un tratamiento estrella, sí. Para todo el centro, mejor una web con varias páginas.
+N.dentistas.title :: Diseño web para clínicas dentales | VUELCOS
+N.dentistas.desc :: Web para clínicas dentales: tratamientos explicados, equipo y primera visita clara. Desde 800 € sin IVA. Textos y logo se presupuestan aparte.
+N.dentistas.h1 :: Una clínica dental que quita el miedo antes de la cita
+N.dentistas.lead :: Quien busca dentista suele llevar tiempo posponiéndolo. La web tiene que hacer fácil el primer paso: entender qué le van a hacer, con quién y qué esperar el primer día.
+N.dentistas.visitors[0][1] :: Explicar la primera visita con calma, sin tecnicismos, reduce la barrera más grande: pedir cita.
+N.dentistas.visitors[1][0] :: Compara tratamientos concretos
+N.dentistas.visitors[1][1] :: «Implante», «ortodoncia invisible», «blanqueamiento»: son búsquedas distintas, y cada una pide su página.
+N.dentistas.visitors[2][0] :: Quiere saber el coste antes de llamar
+N.dentistas.visitors[2][1] :: Sin dar cifras cerradas, explica de qué depende el presupuesto y si hay primera visita de valoración.
+N.dentistas.must[0][1] :: Qué es, cuándo se indica, cuánto dura el proceso y qué cuidados requiere.
+N.dentistas.must[1][1] :: Cada profesional con su especialidad y número de colegiado.
+N.dentistas.must[2][1] :: Qué se hace, cuánto dura y qué documentación llevar.
+N.dentistas.must[3][1] :: Formulario o reserva con franjas reales y recordatorio.
+N.dentistas.care[0] :: La publicidad sanitaria está regulada y varía por comunidad autónoma. Revisa con tu colegio profesional qué puedes afirmar antes de publicar.
+N.dentistas.care[1] :: No usamos fotos de pacientes ni «antes y después» sin tu confirmación de permiso y de que la normativa lo permite.
+N.dentistas.care[2] :: Los datos clínicos no se recogen en la web: el formulario pide lo mínimo.
+N.dentistas.need[1] :: Equipo, especialidad y colegiación de cada profesional.
+N.dentistas.need[3] :: Cómo gestionas hoy las citas y si ofreces financiación (si no la ofreces, no se menciona).
+N.dentistas.faq[0][0] :: ¿Una página por cada tratamiento?
+N.dentistas.faq[0][1] :: Sí, para los principales: cada uno responde a una búsqueda distinta.
+N.dentistas.faq[1][1] :: Mejor explicar de qué depende el coste. Comprueba antes qué permite tu colegio.
+N.dentistas.faq[2][1] :: Se enlazan a tu ficha de Google. No se inventan ni se compran.
+N.fisioterapia.title :: Diseño web para clínicas de fisioterapia | VUELCOS
+N.fisioterapia.desc :: Web para fisioterapeutas: tratamientos por dolencia, sesiones y cita online. Desde 800 € sin IVA. Textos y logo se presupuestan aparte.
+N.fisioterapia.h1 :: Una web de fisioterapia que responde a «me duele aquí»
+N.fisioterapia.lead :: Quien busca fisio rara vez sabe el nombre de la técnica: sabe dónde le duele. La web gana cuando habla de dolencias y de qué se hace en cada sesión, no solo de métodos.
+N.fisioterapia.visitors[0][1] :: «Dolor lumbar», «lesión de hombro», «rehabilitación de rodilla»: cada una es una página posible.
+N.fisioterapia.visitors[1][0] :: Quiere saber cuántas sesiones
+N.fisioterapia.visitors[1][1] :: Sin prometer plazos, explica cómo se valora y cada cuánto se revisa el plan.
+N.fisioterapia.visitors[2][1] :: Formación, especialidad y enfoque de cada fisioterapeuta.
+N.fisioterapia.must[0][0] :: Páginas por dolencia o lesión
+N.fisioterapia.must[0][1] :: Qué se evalúa, qué se hace y cuándo conviene derivar a otro profesional.
+N.fisioterapia.must[1][1] :: Valoración, duración y qué ropa llevar.
+N.fisioterapia.must[2][0] :: Reserva por tipo de sesión
+N.fisioterapia.must[2][1] :: Valoración inicial, seguimiento, y las que ofrezcas, con duración real.
+N.fisioterapia.must[3][1] :: Dirección, transporte y acceso para personas con movilidad reducida.
+N.fisioterapia.care[0] :: No prometas curaciones ni plazos: la publicidad sanitaria está regulada y varía por comunidad. Revisa los textos con tu colegio.
+N.fisioterapia.care[1] :: Si trabajas con mutuas o aseguradoras, indica cuáles, solo si es cierto y vigente.
+N.fisioterapia.care[2] :: No publicamos casos de pacientes sin permiso expreso.
+N.fisioterapia.need[0] :: Dolencias y tratamientos que quieres trabajar.
+N.fisioterapia.need[1] :: Equipo, formación y colegiación.
+N.fisioterapia.need[2] :: Tipos de sesión con duración y precio, si quieres publicarlo.
+N.fisioterapia.need[3] :: Cómo gestionas hoy las citas y cancelaciones.
+N.fisioterapia.faq[0][0] :: ¿Sirve para varios fisioterapeutas?
+N.fisioterapia.faq[0][1] :: Sí, pero la agenda de varios profesionales puede requerir un plan de equipos de la herramienta de reservas, con coste aparte.
+N.fisioterapia.faq[1][0] :: ¿Y si cambio de horarios a menudo?
+N.fisioterapia.faq[1][1] :: Para eso existe el mantenimiento: cambios de contenido con límite pactado por escrito.
+N.fisioterapia.faq[2][0] :: ¿Puedo explicar técnicas concretas?
+N.fisioterapia.faq[2][1] :: Sí, con cuidado de no prometer resultados.
+N.psicologos.title :: Diseño web para psicólogos y terapeutas | VUELCOS
+N.psicologos.desc :: Web para psicólogos y terapeutas: enfoque claro, primera sesión explicada y contacto discreto. Desde 800 € sin IVA. Textos y logo, aparte.
+N.psicologos.h1 :: Una web de terapia que invita sin presionar
+N.psicologos.lead :: Quien busca psicólogo suele estar en un momento delicado. La web debe dar calma: quién eres, cómo trabajas y qué ocurre en una primera sesión, sin urgencias ni promesas.
+N.psicologos.visitors[0][0] :: Tiene dudas antes de escribir
+N.psicologos.visitors[0][1] :: Quiere saber si esto es para él, cuánto dura y cómo se trata lo que cuente.
+N.psicologos.visitors[1][0] :: Busca por motivo o por enfoque
+N.psicologos.visitors[1][1] :: «Ansiedad», «terapia de pareja», «duelo»: cada una puede merecer su página, escrita con cuidado.
+N.psicologos.visitors[2][0] :: Necesita contacto discreto
+N.psicologos.visitors[2][1] :: Un formulario simple y la posibilidad de elegir cómo le respondes: correo o teléfono.
+N.psicologos.must[0][0] :: Una página por motivo de consulta
+N.psicologos.must[0][1] :: Escrita desde lo que la persona vive, sin lenguaje clínico innecesario.
+N.psicologos.must[1][0] :: Quién eres y cómo trabajas
+N.psicologos.must[1][1] :: Formación, colegiación y enfoque, en un tono cercano y profesional.
+N.psicologos.must[2][1] :: Duración, modalidad (presencial u online) y confidencialidad.
+N.psicologos.must[3][1] :: Sin cuentas atrás ni mensajes de urgencia.
+N.psicologos.care[0] :: La publicidad sanitaria y el código deontológico de tu colegio marcan qué puedes afirmar: revísalo antes de publicar.
+N.psicologos.care[1] :: No prometas resultados ni «curas». No usamos testimonios sin consentimiento y comprobación de la normativa.
+N.psicologos.care[2] :: Los datos de salud son especialmente protegidos: el formulario pide lo mínimo y los detalles se tratan en sesión.
+N.psicologos.need[0] :: Motivos de consulta que trabajas y los que derivas.
+N.psicologos.need[1] :: Enfoque, formación y colegiación.
+N.psicologos.need[2] :: Modalidad: presencial, online o ambas.
+N.psicologos.need[3] :: Política de cancelación que realmente aplicas.
+N.psicologos.faq[0][0] :: ¿Puedo ofrecer sesiones online?
+N.psicologos.faq[0][1] :: Sí. La web lo explica; la videollamada la pone la herramienta que elijas.
+N.psicologos.faq[1][0] :: ¿Cómo se gestionan los datos en las reservas?
+N.psicologos.faq[1][1] :: Lo que se pide en la reserva debe ser mínimo. Revisa con tu gestor la protección de datos antes de usar una herramienta externa.
+N.psicologos.faq[2][1] :: Una foto real ayuda a generar confianza, pero es decisión tuya.
+N.arquitectos.title :: Diseño web para arquitectos y estudios | VUELCOS
+N.arquitectos.desc :: Web para arquitectos y estudios: proyectos con contexto, proceso de trabajo y contacto claro. Desde 800 € sin IVA. Textos y logo, aparte.
+N.arquitectos.h1 :: Un portfolio que explica por qué ese proyecto, no solo cómo se ve
+N.arquitectos.lead :: Un estudio de arquitectura se elige por criterio. Las fotos bonitas no bastan: el cliente quiere ver qué problema resolvía cada obra y cómo se trabajó con el encargo.
+N.arquitectos.visitors[0][0] :: Particular con una reforma o vivienda
+N.arquitectos.visitors[0][1] :: Quiere ver obras parecidas a la suya, el proceso y cuánto implica el estudio.
+N.arquitectos.visitors[1][1] :: Busca experiencia en su tipo de proyecto y capacidad de gestión.
+N.arquitectos.visitors[2][1] :: Mira los créditos, la autoría y el nivel de detalle.
+N.arquitectos.must[0][1] :: Encargo, solución, superficie, año y fotos propias; cada proyecto como página.
+N.arquitectos.must[1][1] :: Fases desde el primer contacto hasta la entrega, con lo que se espera del cliente.
+N.arquitectos.must[2][1] :: Quién firma, quién colabora y con qué especialidad.
+N.arquitectos.must[3][1] :: Un formulario que recoja tipo de proyecto, ubicación y fase en que está.
+N.arquitectos.care[0] :: No publicamos imágenes de obras ajenas ni renders que no sean tuyos.
+N.arquitectos.care[1] :: Algunas obras requieren permiso del cliente para mostrarse; confírmalo antes de enviar el material.
+N.arquitectos.care[2] :: Los honorarios y encargos tienen sus normas profesionales; no los fijamos nosotros.
+N.arquitectos.need[0] :: Cinco a diez proyectos con fotos propias y texto breve de cada uno.
+N.arquitectos.need[1] :: Servicios: obra nueva, reforma, interiorismo, dirección de obra…
+N.arquitectos.need[2] :: Cómo es tu proceso y qué esperas del cliente.
+N.arquitectos.need[3] :: Ámbito geográfico donde trabajas.
+N.arquitectos.faq[0][0] :: ¿Cuántos proyectos hacen falta?
+N.arquitectos.faq[0][1] :: Con unos pocos bien contados basta. Más importa la calidad y el contexto que la cantidad.
+N.arquitectos.faq[1][1] :: Sí, si tú tienes los derechos y el cliente lo permite.
+N.arquitectos.faq[2][1] :: Es opcional y se presupuesta aparte; solo merece la pena si lo vas a mantener.
+N.fontaneros.title :: Diseño web para fontaneros | VUELCOS
+N.fontaneros.desc :: Web para fontaneros: servicios por avería, zona de trabajo y llamada rápida. Desde 300 € sin IVA con landing, 800 € con web. Textos y logo, aparte.
+N.fontaneros.h1 :: Una web de fontanería para quien tiene una fuga ahora
+N.fontaneros.lead :: Quien busca fontanero casi siempre tiene un problema en casa. La web que funciona es la que se abre rápido en el móvil y deja llamar sin pensar.
+N.fontaneros.visitors[0][1] :: Quiere llamar ya. Teléfono visible en cada pantalla y horario real.
+N.fontaneros.visitors[1][1] :: Busca señales de que eres un profesional: trabajos reales, zona y cómo se fija el precio.
+N.fontaneros.visitors[2][1] :: «Fuga de agua», «cisterna», «calentador»: cada una es una búsqueda con su página.
+N.fontaneros.must[0][1] :: En móvil, siempre visible, con tu horario real.
+N.fontaneros.must[1][1] :: Averías, instalaciones, calentadores… con lo que incluye cada uno.
+N.fontaneros.must[2][1] :: Barrios o municipios donde trabajas, para no recibir llamadas que no atenderás.
+N.fontaneros.must[3][1] :: Si se hace visita previa, si tiene coste y cómo se confirma el precio.
+N.fontaneros.care[0] :: No prometas urgencias 24 horas ni tiempos de llegada si no los puedes cumplir.
+N.fontaneros.care[1] :: Las instalaciones de gas y calefacción pueden requerir carné profesional: muéstralo solo si lo tienes.
+N.fontaneros.care[2] :: Si publicas precios, que sean los que realmente aplicas.
+N.fontaneros.need[0] :: Servicios que haces y los que no.
+N.fontaneros.need[1] :: Zona de trabajo y horario real.
+N.fontaneros.need[2] :: Fotos propias de trabajos terminados, con permiso si se reconoce el domicilio.
+N.fontaneros.need[3] :: Cómo se fija el precio y si hay visita previa.
+N.fontaneros.faq[0][1] :: Si haces pocos servicios en una zona, sí. Con muchos servicios o zonas, una web con varias páginas capta más búsquedas.
+N.fontaneros.faq[1][1] :: Es clave en servicios locales: nombre, teléfono y zona deben coincidir con la web.
+N.fontaneros.faq[2][0] :: ¿Puedo cambiar el teléfono yo?
+N.fontaneros.faq[2][1] :: Se puede pactar mantenimiento para cambios puntuales.
+N.cerrajeros.title :: Diseño web para cerrajeros | VUELCOS
+N.cerrajeros.desc :: Web para cerrajeros: servicios por urgencia y por instalación, zona clara y precios con criterio. Desde 300 € sin IVA. Textos y logo, aparte.
+N.cerrajeros.h1 :: Una web de cerrajería en la que se pueda confiar a la primera
+N.cerrajeros.lead :: La cerrajería es un sector donde el cliente desconfía de entrada: ha oído historias de cobros inflados. Tu web puede diferenciarte siendo clara en lo que haces y en cómo se cobra.
+N.cerrajeros.visitors[0][0] :: Está en la puerta, sin llave
+N.cerrajeros.visitors[0][1] :: Busca rapidez y una voz humana al teléfono. Si la web tarda, pasa a otra.
+N.cerrajeros.visitors[1][1] :: Quiere saber, antes de llamar, de qué depende el precio y si hay desplazamiento.
+N.cerrajeros.visitors[2][0] :: Planifica un cambio de cerradura
+N.cerrajeros.visitors[2][1] :: Busca opciones, niveles de seguridad y plazos.
+N.cerrajeros.must[0][1] :: Qué incluye la salida, el desplazamiento y la mano de obra, explicado sin letra pequeña.
+N.cerrajeros.must[1][1] :: Apertura de puertas, cambio de bombín, puertas blindadas, cerraduras de seguridad.
+N.cerrajeros.must[2][1] :: Municipios o barrios, para evitar falsas promesas.
+N.cerrajeros.must[3][1] :: Cómo se identifica el profesional y qué garantía ofreces, solo si es cierta.
+N.cerrajeros.care[0] :: No prometas «llegamos en 15 minutos» ni urgencias 24 horas si no puedes cumplirlas.
+N.cerrajeros.care[1] :: Evita captar clientes con precios gancho que luego no se mantienen: es lo primero que se vuelve en tu contra en una reseña.
+N.cerrajeros.care[2] :: Algunas actuaciones pueden requerir verificar quién es el titular de la vivienda; explícalo con naturalidad.
+N.cerrajeros.need[0] :: Servicios y precios orientativos con criterio.
+N.cerrajeros.need[2] :: Fotos propias de trabajos y de la identificación profesional.
+N.cerrajeros.need[3] :: Política de garantía que aplicas.
+N.cerrajeros.faq[0][1] :: Orientativos y con criterio, mejor que nada, y claros sobre qué los cambia.
+N.cerrajeros.faq[1][0] :: ¿Cómo evito parecer un anuncio sospechoso?
+N.cerrajeros.faq[1][1] :: Con trabajos reales, zona concreta y precio explicado. Es lo contrario de lo que suelen hacer los anuncios de gancho.
+N.cerrajeros.faq[2][1] :: Para empezar, sí. Si quieres aparecer por varias búsquedas, cada servicio pide su página.
+N.gimnasios.name :: Gimnasios y centros deportivos
+N.gimnasios.title :: Diseño web para gimnasios y centros deportivos | VUELCOS
+N.gimnasios.desc :: Web para gimnasios y centros deportivos: tarifas, horarios de clases y primera visita. Desde 800 € sin IVA. Textos y logo se presupuestan aparte.
+N.gimnasios.h1 :: Una web de gimnasio que se entiende antes de entrar
+N.gimnasios.lead :: Quien busca gimnasio compara tarifas, horarios y ambiente. La web que convence enseña el centro, explica las clases y facilita probar sin compromiso, si lo ofreces.
+N.gimnasios.visitors[0][1] :: Quiere ver tarifas claras, qué incluye cada una y si hay permanencia.
+N.gimnasios.visitors[1][1] :: Un horario legible en el móvil, actualizado.
+N.gimnasios.visitors[2][1] :: Un centro para principiantes, uno de fuerza, uno de clases dirigidas: la web debe decir qué tipo de sitio eres.
+N.gimnasios.must[0][0] :: Tarifas y condiciones claras
+N.gimnasios.must[0][1] :: Cuotas, matrícula si la hay y permanencia, explicadas sin letra pequeña.
+N.gimnasios.must[1][1] :: Visible en móvil, con fecha de última actualización.
+N.gimnasios.must[2][1] :: Salas, equipamiento y ambiente real.
+N.gimnasios.must[3][1] :: Formulario o reserva para conocer el centro, si lo ofreces.
+N.gimnasios.care[0] :: Si ofreces servicios de nutrición o planes de salud, la publicidad puede estar regulada: revísalo antes de publicar promesas.
+N.gimnasios.care[1] :: No uses imágenes de socios sin su permiso.
+N.gimnasios.care[2] :: Las condiciones de baja y permanencia deben ser las reales.
+N.gimnasios.need[0] :: Tarifas y condiciones vigentes.
+N.gimnasios.need[1] :: Horario de clases y quién las imparte.
+N.gimnasios.need[3] :: Cómo gestionas hoy altas, bajas y pruebas.
+N.gimnasios.faq[0][0] :: ¿Puedo mostrar el horario siempre actualizado?
+N.gimnasios.faq[0][1] :: Sí, con mantenimiento para cambios o con una herramienta de reservas de clases, según el caso.
+N.gimnasios.faq[1][0] :: ¿Sirve para varios centros?
+N.gimnasios.faq[1][1] :: Se valora por separado: cada centro suele pedir su página y su ficha de Google.
+N.gimnasios.faq[2][0] :: ¿Puedo vender cuotas online?
+N.gimnasios.faq[2][1] :: Depende de si quieres cobrar con una herramienta externa; se valora antes de dar precio.
+N.casas-rurales.name :: Casas rurales y alojamientos pequeños
+N.casas-rurales.title :: Diseño web para casas rurales y alojamientos | VUELCOS
+N.casas-rurales.desc :: Web para casas rurales y alojamientos pequeños: fotos, entorno, tarifas y consulta de disponibilidad. Desde 800 € sin IVA. Textos y logo, aparte.
+N.casas-rurales.h1 :: Una casa rural se vende con el entorno y con tu forma de acoger
+N.casas-rurales.lead :: Quien busca casa rural quiere imaginarse allí: el entorno, la casa, el trato. Una web propia te permite contarlo sin depender solo de los portales.
+N.casas-rurales.visitors[0][0] :: Compara casas muy parecidas
+N.casas-rurales.visitors[0][1] :: Lo que decide es el detalle: fotos propias, ubicación exacta y lo que hay cerca.
+N.casas-rurales.visitors[1][1] :: Capacidad, mascotas, estancia mínima, hora de entrada y tarifas por temporada.
+N.casas-rurales.visitors[2][1] :: Busca qué hacer en la zona, distancias y cómo llegar.
+N.casas-rurales.must[0][0] :: Fotos y descripción honestas
+N.casas-rurales.must[0][1] :: Cómo es de verdad la casa, sin adjetivos inflados.
+N.casas-rurales.must[1][1] :: Capacidad, mascotas, estancia mínima, fianza y cancelación.
+N.casas-rurales.must[2][0] :: Consulta de disponibilidad
+N.casas-rurales.must[2][1] :: Calendario o formulario según lo que puedas gestionar.
+N.casas-rurales.must[3][1] :: Escapadas en pareja, grupos, celebraciones, senderismo cercano, según tu caso.
+N.casas-rurales.care[0] :: Los alojamientos turísticos tienen registro y normas propias que varían por comunidad autónoma: comprueba qué datos debes mostrar en tu publicidad.
+N.casas-rurales.care[1] :: No prometas lo que no hay (piscina, wifi, aire acondicionado) ni fotos de otra casa.
+N.casas-rurales.care[2] :: Los portales pueden complementar la web, pero conviene saber cuánto cobran.
+N.casas-rurales.need[0] :: Fotos propias, también de exteriores y del entorno.
+N.casas-rurales.need[1] :: Tarifas por temporada y condiciones.
+N.casas-rurales.need[2] :: Número de registro turístico, si te corresponde.
+N.casas-rurales.need[3] :: Cómo gestionas hoy las reservas y el calendario.
+N.casas-rurales.faq[0][0] :: ¿Puedo dejar de depender de los portales?
+N.casas-rurales.faq[0][1] :: Una web propia ayuda, pero lo habitual es complementar: se valora cuánto compensa en tu caso.
+N.casas-rurales.faq[1][0] :: ¿Se puede reservar con pago?
+N.casas-rurales.faq[1][1] :: Con una herramienta externa de pago, según lo visto en reservas y pagos.
+N.casas-rurales.faq[2][1] :: Se enlazan desde tu ficha de Google o portales; no se inventan.
+W.abogados.web-de-negocio :: Una página por área de práctica, una para el equipo y otra para honorarios y primera consulta. Quien busca abogado compara despachos antes de llamar.
+W.abogados.textos-y-seo :: Los textos legales los redacta quien conoce el derecho. Aquí se cuida que cada área responda a lo que se busca, sin prometer resultados.
+W.abogados.reservas-y-citas :: Una primera consulta con hueco elegible ahorra llamadas de ida y vuelta. Solo si tienes quien gestione la agenda a diario.
+W.clinicas.web-de-negocio :: Una página por tratamiento, ficha del equipo y cómo llegar. El paciente quiere saber en qué consiste antes de pedir cita.
+W.clinicas.reservas-y-citas :: Pedir cita sin llamar. Ojo con los datos de salud: el formulario debe pedir lo mínimo y su tratamiento lo revisas con tu gestor.
+W.clinicas.textos-y-seo :: Explicar tratamientos en lenguaje claro, sin promesas ni «antes y después» sin respaldo. Los textos sanitarios los revisa un profesional colegiado.
+W.hosteleria.web-de-negocio :: Carta en texto legible desde el móvil, horarios, sala, cómo llegar y reservas. Lo que se mira de pie en la calle.
+W.hosteleria.reservas-y-citas :: Mesa o habitación sin descolgar el teléfono en pleno servicio. Valora cuánta antelación y qué aforo quieres abrir.
+W.hosteleria.mantenimiento :: Cambios de carta, horarios de festivos y vacaciones: lo que se toca cada semana y no debería depender de ti.
+W.inmobiliarias.web-de-negocio :: Fichas de inmueble con la información que de verdad decide una visita: precio, metros, zona y fotos propias.
+W.inmobiliarias.textos-y-seo :: Descripciones de zona y de inmueble que no se repitan de un anuncio a otro. Es lo que más cuesta mantener si captas muchos inmuebles.
+W.inmobiliarias.mantenimiento :: Una cartera cambia cada semana: altas, bajas y precios. El mantenimiento evita que haya inmuebles ya vendidos en la web.
+W.reformas.web-de-negocio :: Servicios por tipo de obra, trabajos terminados con fotos propias y zona donde trabajas. Quien reforma pide varios presupuestos.
+W.reformas.landing :: Si haces un solo tipo de obra, una página que lleve directamente a pedir presupuesto puede bastar para empezar.
+W.reformas.textos-y-seo :: Cada tipo de obra es una búsqueda distinta: baños, cocinas, reformas integrales. Textos concretos por cada una.
+W.estetica.web-de-negocio :: Tratamientos con duración y precio orientativo, equipo y ambiente del local. Se decide mucho por la imagen.
+W.estetica.reservas-y-citas :: La agenda es el negocio. Reservar sin llamar evita huecos y mensajes fuera de horario; hay que mantenerla al día.
+W.estetica.landing :: Para una promoción o un tratamiento concreto, una página que lleve a reservar. Útil si trabajas con redes sociales.
+W.dentistas.web-de-negocio :: Una página por tratamiento (implantes, ortodoncia, limpieza…), el equipo, financiación si la ofreces y cómo llegar.
+W.dentistas.reservas-y-citas :: Primera visita con hueco elegible. Recuerda que son datos de salud: pide lo mínimo y consulta con tu gestor su tratamiento.
+W.dentistas.textos-y-seo :: Tratamientos explicados sin promesas ni comparativas con otras clínicas. Los textos sanitarios los revisa un profesional.
+W.fisioterapia.web-de-negocio :: Servicios por dolencia o técnica, qué esperar en la primera sesión y quién te atiende. El paciente llega con una molestia concreta.
+W.fisioterapia.reservas-y-citas :: Sesiones recurrentes: elegir hueco y recibir recordatorio evita ausencias. Define tu política de cancelación.
+W.fisioterapia.mantenimiento :: Horarios de verano, nuevos servicios o cambios de tarifa sin tener que tocar la web tú mismo.
+W.psicologos.web-de-negocio :: Motivos de consulta, tu enfoque y cómo es la primera sesión. Quien busca terapia necesita sentir calma antes de escribir.
+W.psicologos.reservas-y-citas :: Un primer contacto sencillo y discreto, con la opción de elegir cómo te responden. Los datos son delicados: pide lo mínimo.
+W.psicologos.textos-y-seo :: Textos escritos con cuidado, sin promesas de «cura» y ajustados a la deontología de tu colegio, que revisas tú.
+W.arquitectos.web-de-negocio :: Proyectos con planos y fotos propias, el proceso desde el encargo y quién firma. El portafolio es la prueba.
+W.arquitectos.textos-y-seo :: Descripción de cada proyecto con programa, ubicación y papel de tu estudio. Evita el texto vago que se repite entre estudios.
+W.arquitectos.mantenimiento :: Subir proyectos nuevos sin rehacer la web, con el mismo formato que los anteriores.
+W.fontaneros.landing :: Una página rápida en el móvil con teléfono fijo visible, zona y servicios. Para quien tiene una fuga ahora y no lee.
+W.fontaneros.web-de-negocio :: Una página por servicio (averías, calentadores, instalaciones) para que te encuentren por cada búsqueda concreta.
+W.fontaneros.mantenimiento :: Cambiar teléfono, horarios o zona de servicio sin esperar a que alguien lo haga. Lo que más cambia en tu negocio.
+W.cerrajeros.landing :: Teléfono, zona y cómo se cobra, claros desde el primer vistazo. En urgencias la confianza se juega en segundos.
+W.cerrajeros.web-de-negocio :: Servicios separados (apertura, cambio de bombín, cerraduras de seguridad) y política de precios visible para ganar confianza.
+W.cerrajeros.textos-y-seo :: Redactar cómo se fija el precio y qué ocurre en una apertura, de forma clara y sin letra pequeña.
+W.gimnasios.web-de-negocio :: Horarios de clases, tarifas, instalaciones con fotos propias y cómo probar. Quien busca gimnasio compara cerca de casa.
+W.gimnasios.reservas-y-citas :: Reservar clases o una sesión de prueba con aforo limitado. Necesita que alguien gestione plazas y cancelaciones.
+W.gimnasios.mantenimiento :: El horario y las clases cambian cada temporada. Mantenerlos al día evita clientes en una puerta cerrada.
+W.casas-rurales.web-de-negocio :: Fotos propias de cada estancia, qué hay cerca, normas de la casa y cómo reservar. El que busca casa rural compara varias.
+W.casas-rurales.reservas-y-citas :: Calendario de disponibilidad para reservar sin intermediarios. Valora antes cuánto cobran los portales y qué prefieres.
+W.casas-rurales.textos-y-seo :: Textos sobre el entorno y la casa que respondan a búsquedas de zona, época y tipo de escapada.
